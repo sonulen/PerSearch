@@ -1,18 +1,20 @@
-﻿Построение начато 19.02.2017 15:42:03.
-     1>Проект "c:\Users\Medivh\documents\visual studio 2012\Projects\PerSearch\PerSearch\PerSearch.vcxproj" в узле 2 (целевые объекты Build).
+﻿Построение начато 20.02.2017 15:15:52.
+     1>Проект "C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\PerSearch\PerSearch.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         D:\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\PerSearch.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /errorReport:prompt /clr:nostdlib myFunction.cpp
+         D:\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\PerSearch.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /errorReport:prompt /clr:nostdlib PerSearch.cpp myFunction.cpp
+         PerSearch.cpp
          myFunction.cpp
+         Создание кода...
        Link:
-         D:\Visual Studio 2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\medivh\documents\visual studio 2012\Projects\PerSearch\x64\Release\PerSearch.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OCV\opencv\build\x64\vc12\lib opencv_core249.lib opencv_imgproc249.lib opencv_highgui249.lib opencv_ml249.lib opencv_video249.lib opencv_features2d249.lib opencv_calib3d249.lib opencv_objdetect249.lib opencv_contrib249.lib opencv_legacy249.lib opencv_flann249.lib /ASSEMBLYRESOURCE:x64\Release\PerSearch.Form1.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\medivh\documents\visual studio 2012\Projects\PerSearch\x64\Release\PerSearch.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Release\app.res
+         D:\Visual Studio 2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\x64\Release\PerSearch.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OCV\opencv\build\x64\vc12\lib opencv_core249.lib opencv_imgproc249.lib opencv_highgui249.lib opencv_ml249.lib opencv_video249.lib opencv_features2d249.lib opencv_calib3d249.lib opencv_objdetect249.lib opencv_contrib249.lib opencv_legacy249.lib opencv_flann249.lib /ASSEMBLYRESOURCE:x64\Release\PerSearch.Form1.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\x64\Release\PerSearch.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Release\app.res
          x64\Release\AssemblyInfo.obj
          x64\Release\myFunction.obj
          x64\Release\PerSearch.obj
          x64\Release\stdafx.obj
          "x64\Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         PerSearch.vcxproj -> c:\users\medivh\documents\visual studio 2012\Projects\PerSearch\x64\Release\PerSearch.exe
-     1>Построение проекта "c:\Users\Medivh\documents\visual studio 2012\Projects\PerSearch\PerSearch\PerSearch.vcxproj" завершено (целевые объекты Build).
+         PerSearch.vcxproj -> C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\x64\Release\PerSearch.exe
+     1>Построение проекта "C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\PerSearch\PerSearch.vcxproj" завершено (целевые объекты Build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:01.46
+Затраченное время: 00:00:02.53
