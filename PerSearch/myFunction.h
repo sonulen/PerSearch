@@ -7,3 +7,5 @@ System::String^ checkAndCreateDirectory ( System::String^ path );
 std::string converSystemStringToStdString ( System::String^ systemStr );
 // Конвертация из std::string в System::String^
 System::String^ convertStdStringToSystemString ( std::string stdStr );
+// Псевдорандомный цвет
+System::Drawing::Pen^ getPsevdoRandColor ( int i );

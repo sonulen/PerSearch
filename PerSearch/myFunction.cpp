@@ -23,3 +23,13 @@ System::String^ convertStdStringToSystemString ( std::string stdStr ) {
 	systemStr = msclr::interop::marshal_as<System::String^>(stdStr);
 	return systemStr;
 }
+
+System::Drawing::Pen^ getPsevdoRandColor ( int i ) {
+	if ( i % 6 == 0 ) return System::Drawing::Pens::Aqua;
+	if ( i % 6 == 1 ) return System::Drawing::Pens::DarkOrchid;
+	if ( i % 6 == 2 ) return System::Drawing::Pens::Gold;
+	if ( i % 6 == 3 ) return System::Drawing::Pens::Green;
+	if ( i % 6 == 4 ) return System::Drawing::Pens::Yellow;
+	if ( i % 6 == 5 ) return System::Drawing::Pens::Red;
+	if ( i % 6 == 6 ) return System::Drawing::Pens::Orange;
+}
