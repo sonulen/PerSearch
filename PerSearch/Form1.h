@@ -13,6 +13,10 @@ int timeInterval; // Временной интервал
 bool resolutionForResize; // Переменная для хранения решения изменения размера изображения
 myRoi* myCurrentRoi; // Класс для хранения информации о ROI
 bool Drow; // переменная для проверки отрисовки
+int defaultWidth; // Изначальная ширина видео
+int defaultHeight; // Изначальная высота видео
+int resizeWidth; // Выбранная ширина видео
+int resizeHeight; // Выбранная высота видео
 int coefficientWidth; // Во сколько раз сжали изображение по ширине
 int coefficientHeight; // Во сколько раз сжали изображение по высоте
 
@@ -76,6 +80,16 @@ namespace PerSearch {
 	private: System::Windows::Forms::TextBox^  textBox3;
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::Label^  label6;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::RadioButton^  radioButton5;
+	private: System::Windows::Forms::RadioButton^  radioButton4;
+	private: System::Windows::Forms::RadioButton^  radioButton3;
+	private: System::Windows::Forms::RadioButton^  radioButton2;
+	private: System::Windows::Forms::RadioButton^  radioButton1;
+	private: System::Windows::Forms::Button^  button7;
+	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::Label^  label12;
 
 	private:
 		/// <summary>
@@ -93,7 +107,17 @@ namespace PerSearch {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
@@ -118,6 +142,7 @@ namespace PerSearch {
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
+			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -133,7 +158,12 @@ namespace PerSearch {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->label12);
+			this->tabPage1->Controls->Add(this->label11);
+			this->tabPage1->Controls->Add(this->label10);
+			this->tabPage1->Controls->Add(this->groupBox1);
 			this->tabPage1->Controls->Add(this->button6);
+			this->tabPage1->Controls->Add(this->button7);
 			this->tabPage1->Controls->Add(this->button5);
 			this->tabPage1->Controls->Add(this->button4);
 			this->tabPage1->Controls->Add(this->textBox5);
@@ -163,16 +193,132 @@ namespace PerSearch {
 			this->tabPage1->Text = L"HOG + SVM";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(12, 183);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(41, 13);
+			this->label12->TabIndex = 29;
+			this->label12->Text = L"label12";
+			this->label12->Visible = false;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(13, 141);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(41, 13);
+			this->label11->TabIndex = 28;
+			this->label11->Text = L"label11";
+			this->label11->Visible = false;
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(12, 101);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(41, 13);
+			this->label10->TabIndex = 27;
+			this->label10->Text = L"label10";
+			this->label10->Visible = false;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton5);
+			this->groupBox1->Controls->Add(this->radioButton4);
+			this->groupBox1->Controls->Add(this->radioButton3);
+			this->groupBox1->Controls->Add(this->radioButton2);
+			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->Location = System::Drawing::Point(35, 167);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(136, 166);
+			this->groupBox1->TabIndex = 25;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Изменить разрешение";
+			this->groupBox1->Visible = false;
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Location = System::Drawing::Point(6, 128);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(127, 17);
+			this->radioButton5->TabIndex = 4;
+			this->radioButton5->Text = L"Оставить исходным";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			this->radioButton5->Visible = false;
+			this->radioButton5->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton5_CheckedChanged);
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(6, 105);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(78, 17);
+			this->radioButton4->TabIndex = 3;
+			this->radioButton4->Text = L"1280 х 960";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			this->radioButton4->Visible = false;
+			this->radioButton4->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton4_CheckedChanged);
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(6, 82);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(72, 17);
+			this->radioButton3->TabIndex = 2;
+			this->radioButton3->Text = L"960 х 720";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->Visible = false;
+			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton3_CheckedChanged);
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(6, 59);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(72, 17);
+			this->radioButton2->TabIndex = 1;
+			this->radioButton2->Text = L"640 х 480";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->Visible = false;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton2_CheckedChanged);
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(6, 36);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(72, 17);
+			this->radioButton1->TabIndex = 0;
+			this->radioButton1->Text = L"320 x 240";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->Visible = false;
+			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton1_CheckedChanged);
+			// 
 			// button6
 			// 
 			this->button6->Location = System::Drawing::Point(15, 339);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(176, 26);
 			this->button6->TabIndex = 24;
-			this->button6->Text = L"Начать анализ";
+			this->button6->Text = L"Принять";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Visible = false;
 			this->button6->Click += gcnew System::EventHandler(this, &Form1::button6_Click);
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(16, 339);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(175, 26);
+			this->button7->TabIndex = 26;
+			this->button7->Text = L"button7";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Visible = false;
+			this->button7->Click += gcnew System::EventHandler(this, &Form1::button7_Click);
 			// 
 			// button5
 			// 
@@ -403,11 +549,14 @@ namespace PerSearch {
 			this->Controls->Add(this->tabControl1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form1";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"PerSearch";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
@@ -422,7 +571,7 @@ namespace PerSearch {
 				// Загрузка файл диалога с параметрами Только видео Только Avi и Mov
 				OpenFileDialog^ open_dialog = gcnew OpenFileDialog();
 				open_dialog->Title = "Выбор загружаемого видео";
-				open_dialog->Filter = "Video Files(*.AVI)|*.AVI|Mov Files(*.MOV)|*.MOV|All files (*.*)|*.*";
+				open_dialog->Filter = "All files (*.*)|*.*|Video Files(*.AVI)|*.AVI|Mov Files(*.MOV)|*.MOV";
 				open_dialog->InitialDirectory = "//";
 					try {
 						if (open_dialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
@@ -463,7 +612,7 @@ namespace PerSearch {
 				if ( timeInterval < 0 ) throw -1;
 
 				// Элементы ввода интервала времени - скрыть
-				label4->Visible=false;
+				label4->Text = "Интервал времени = " + timeInterval;
 				button2->Visible=false;
 				textBox1->Visible=false;
 
@@ -479,13 +628,18 @@ namespace PerSearch {
 				cv::Mat imag;
 				video >> imag;
 
+				defaultWidth = imag.size().width;
+				defaultHeight = imag.size().height;
+
 				if ( imag.size().width != 320 && imag.size().height != 240 ) {
-					resolutionForResize = true;
 					coefficientWidth = imag.size().width/320;
 					coefficientHeight = imag.size().height/240;
+					cv::resize(imag,imag,cv::Size(320,240),0,0,1);
 				}
-				else resolutionForResize = false;
-				if ( resolutionForResize ) cv::resize(imag,imag,cv::Size(320,240),0,0,1);
+				else {
+					coefficientWidth = 1;
+					coefficientHeight = 1;
+				}
 				
 				cv::imwrite( filesDir+"SavedParams\\firstframe.jpg", imag);
 				pictureBox1->Image=Image::FromFile( convertStdStringToSystemString( filesDir+"SavedParams\\firstframe.jpg" ));
@@ -533,6 +687,8 @@ namespace PerSearch {
 					str = mas[3].ToString();
 					textBox6->Text= str;
 					// Элементы ввода количества ROI - скрыть
+					label10->Visible = true;
+					label10->Text = "Количество ROI = " + nRoi;
 					label5->Visible=false;
 					textBox2->Visible=false;
 					button3->Visible=false;
@@ -549,7 +705,7 @@ namespace PerSearch {
 					if ( myCurrentRoi->getAmountRoi() == 1 ) {
 						button5->Visible = false;
 						button4->Visible = true;
-						button4->Text = "Отобразить выбранные данные";
+						button4->Text = "Принять координаты ROI";
 					} else button5->Visible = true;
 					// Отобразим полученную ROI на координатах
 					Bitmap ^ myBitmap = gcnew Bitmap(convertStdStringToSystemString(filesDir+"SavedParams\\firstframe.jpg")); 
@@ -636,8 +792,26 @@ namespace PerSearch {
 						}
 						pictureBox1->Image = myBitmap;
 						fout.close();
+						// Уберем кнопку принять ROI и отобразим элементы выбора разрешения
 						button4->Visible = false;
-						button6->Visible = true;
+						radioButton1->Visible = true;
+						radioButton2->Visible = true;
+						radioButton3->Visible = true;
+						radioButton4->Visible = true;
+						radioButton5->Visible = true;
+						groupBox1->Visible = true;
+						// Уберем элементы выбора координат ROI
+						label11->Visible = true;
+						label11->Text = "Координаты ROI введены.";
+						label6->Visible = false;
+						label7->Visible = false;
+						label8->Visible = false;
+						label9->Visible = false;
+						textBox3->Visible = false;
+						textBox4->Visible = false;
+						textBox5->Visible = false;
+						textBox6->Visible = false;
+
 				 }
 				 catch ( int inspect )
 				 {
@@ -660,7 +834,7 @@ namespace PerSearch {
 					 MessageBox::Show("Ошибка формата! "+ e->Message);
 				 }
 		 }
-
+	// Обработка ввода координат ROI всех кроме последней
 	private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 				int mas[4];
 				bool lastRoi = myCurrentRoi->getCurrentNumberRoi() == (myCurrentRoi->getAmountRoi() -1);
@@ -724,13 +898,172 @@ namespace PerSearch {
 					 MessageBox::Show("Ошибка формата! "+ e->Message);
 				 }
 		 }
-	// Обаботка кнопки "Начать Анализ"
+	// Обаботка кнопки "Принять изменение разрешения"
 	private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
-	 
+				 groupBox1->Visible = false;
+				 radioButton1->Visible = false;
+				 radioButton2->Visible = false;
+				 radioButton3->Visible = false;
+				 radioButton4->Visible = false;
+				 radioButton5->Visible = false;
+				 button7->Visible = true;
+				 button7->Text = "Начать анализ видеопотока";
+				 button6->Visible = false;
+				 label12->Visible = true;
+				 label12->Text = "Выбранно разрешение: " + resizeWidth + " x " + resizeHeight;
 	}
+	// Обработка radioButton's
+	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 if ( radioButton1->Checked ) {
+				 resolutionForResize = true;
+				 resizeWidth = 320;
+				 resizeHeight = 240;
+				 button6->Visible = true;
+			 }
+		 }
+	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 if ( radioButton2->Checked ) {
+				 resolutionForResize = true;
+				 resizeWidth = 640;
+				 resizeHeight = 480;
+				 button6->Visible = true;
+			 }
+		 }
+	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 if ( radioButton3->Checked ) {
+				 resolutionForResize = true;
+				 resizeWidth = 960;
+				 resizeHeight = 720;
+				 button6->Visible = true;
+			 }
+		 }
+	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 if ( radioButton4->Checked ) {
+				 resolutionForResize = true;
+				 resizeWidth = 1280;
+				 resizeHeight = 960;
+				 button6->Visible = true;
+			 }
+		 }
+	private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 if ( radioButton5->Checked ) {
+				 resolutionForResize = false;
+				 resizeWidth = defaultWidth;
+				 resizeHeight = defaultHeight;
+				 button6->Visible = true;
+			 }
+		 }
+		 // Обработка нажатия кнопки "Начать анализ"
+	private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
+				 cv::VideoCapture video;// переменная для хранения потока видео
+				 video.open(loadFileName); // поток видео
+				 cv::HOGDescriptor HGDES; // хог дескриптор
+				 cv::Mat imag; // переменная для хранения кадра
+				 HGDES.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector()); // сам хог дескриптор с свм классификатором
+				 cv::namedWindow("Распознание пешеходов", CV_WINDOW_AUTOSIZE); // окно для вывода кадра с найденными объектами
+				
+				 //
+				 cv::namedWindow("Background", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("Sub", CV_WINDOW_AUTOSIZE);
+				 ///
+				 int fontFace = CV_FONT_HERSHEY_COMPLEX_SMALL; //стиль фонта
+				 double fontScale = 2; //2
+				 int thickness = 2;  //2
+
+				 cv::Ptr<cv::BackgroundSubtractor> pMOG;
+				 pMOG= new cv::BackgroundSubtractorMOG2();
+				 cv::Mat fgMaskMOG;
+				 cv::Mat foregroundImg;
+				 cv::Mat Img;
+				 // Привести ROI к соотносимым значениям
+				 myCurrentRoi->resizeForVideo( resizeWidth / 320 );
+				 //
 
 
+				 
 
+				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
+					 video >> imag; // считываем кадр	
+					 if (imag.empty()) // если не смогли считать - выход из цикла
+						break;
+					
+					 // Привести разрешение видео к соотносимым значениям
+					 if ( resolutionForResize ) cv::resize(imag,imag,cv::Size(resizeWidth,resizeHeight),0,0,1);
+					 //
+
+					 // background
+					 foregroundImg = cv::Scalar::all(0);
+					 imag.copyTo(foregroundImg, fgMaskMOG);
+					 pMOG->operator()(imag, fgMaskMOG,0.1);
+					 
+					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(71,71), 3.5,3.5);
+					 cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
+					 //cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(51,51), 3.5,3.5);
+					// cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
+					 foregroundImg = cv::Scalar::all(0);
+					 cv::inRange(fgMaskMOG, 10, 255, fgMaskMOG);
+						// матрица
+						cv::Mat kernel = (cv::Mat_<double>(3,3) << 1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+						// накладываем фильтр
+						
+						cv::filter2D(fgMaskMOG, fgMaskMOG, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
+
+					 imag.copyTo(foregroundImg, fgMaskMOG);
+					 //pMOG->getBackgroundImage(fgMaskMOG);
+					 //
+					 
+
+
+					 std::vector<cv::Rect> detect, detect_filter; // массивы для хранения найденных
+					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(8,8), cv::Size(0,0), 1.05, 2); // мультискейл поиск было 8 8 32 32
+					
+					 size_t i, j; //для пробежки по найденным
+					 for (i=0; i<detect.size(); i++) 
+					 {
+						cv::Rect r = detect[i];
+						for (j=0; j<detect.size(); j++) 
+							if (j!=i && (r & detect[j]) == r)
+								break;
+						if (j== detect.size())
+							detect_filter.push_back(r); // добавляем в конец
+					 }
+					 for (i=0; i<detect_filter.size(); i++) 
+					 {
+							//обводим найденных
+							cv::Rect rec = detect_filter[i];
+							rec.x += cvRound(rec.width*0.1);
+							rec.width = cvRound(rec.width*0.8);
+							rec.y += cvRound(rec.height*0.07);
+							rec.height = cvRound(rec.height*0.8);
+							cv::rectangle(imag, rec.tl(), rec.br(), cv::Scalar(0,255,0), 3); // прямоугольник вокруг найденных объектов
+						
+							//рисуем число в углу
+							char buffer[10];
+							_i64toa(detect_filter.size(), buffer, 10); // преобразуем int64 в char
+							cv::Point textOrg(290,30);
+							cv::putText(imag, buffer, textOrg, fontFace, fontScale, CV_RGB(0,255,0), thickness,8); // надпись в углу кол-во людей на кадре
+						
+							cv::circle(imag,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
+					 }
+
+					 // Отрисовать все ROI на кадре
+					 for (int i = 0; i < myCurrentRoi->getAmountRoi(); i++) {
+							myCurrentRoi->setRoi(i);
+							int* nextMas = myCurrentRoi->getCurrentRoiCoord();
+							cv::rectangle(imag, cv::Point(nextMas[0],nextMas[1]), cv::Point(nextMas[2],nextMas[3]), CV_RGB(myCurrentRoi->getCurrentNumberRoi()*50,0,0), 1);
+						}					 
+					 //
+
+					 cv::imshow("Распознание пешеходов", imag);
+					 cv::imshow("Background", fgMaskMOG);
+					 cv::imshow("Sub", foregroundImg);
+					 if (cv::waitKey(1)>=0){
+					 	break;
+					 }
+				 }
+				 cvDestroyAllWindows();
+		 }
 };// Окончание
 }
 

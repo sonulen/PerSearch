@@ -11,7 +11,6 @@ myRoi::myRoi (int amount) {
 	this->p_arrayRoiCoordinate = new int [amount * 4];
 	for (int i = 0; i < amount*4; i++ ) this->p_arrayRoiCoordinate[i] = 0;
 	this->currentNumberRoi = 0;
-	System::Windows::Forms::MessageBox::Show("Вызван конструктор где amount = " + amount);
 }
 // Деструктор
 myRoi::~myRoi () {
@@ -84,4 +83,9 @@ int myRoi::getAmountRoi () {
 // Устанавливает номер ROI с которой работаем
 void myRoi::setRoi (int i) {
 	this->currentNumberRoi = i;
+}
+
+void myRoi::resizeForVideo (int factor) {
+	for ( int i = 0; i < this->amountRoi*4; i++ ) 
+		this->p_arrayRoiCoordinate[i] = this->p_arrayRoiCoordinate[i] * factor;
 }

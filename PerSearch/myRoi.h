@@ -28,6 +28,8 @@ class myRoi {
 		int myRoi::getAmountRoi ();
 		// ”станавливает номер ROI с которой работаем
 		void myRoi::setRoi (int);
+		// ѕриводит координаты ROI к значени€м соотносимым с видеопотоком
+		void myRoi::resizeForVideo (int);
 		// ƒеструктор
 		~myRoi();
 };
