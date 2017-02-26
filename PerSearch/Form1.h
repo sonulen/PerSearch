@@ -965,16 +965,22 @@ namespace PerSearch {
 				 //
 				 cv::namedWindow("Background", CV_WINDOW_AUTOSIZE);
 				 cv::namedWindow("Sub", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("ImgCheck", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("ImgCheck2", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("ImgCheck3", CV_WINDOW_AUTOSIZE);
 				 ///
 				 int fontFace = CV_FONT_HERSHEY_COMPLEX_SMALL; //стиль фонта
 				 double fontScale = 2; //2
 				 int thickness = 2;  //2
 
 				 cv::Ptr<cv::BackgroundSubtractor> pMOG;
-				 pMOG= new cv::BackgroundSubtractorMOG2();
+				 pMOG= new cv::BackgroundSubtractorMOG();
 				 cv::Mat fgMaskMOG;
 				 cv::Mat foregroundImg;
 				 cv::Mat Img;
+				 cv::Mat ImgCheck;
+				 cv::Mat ImgCheck2;
+				 cv::Mat ImgCheck3;
 				 // Привести ROI к соотносимым значениям
 				 myCurrentRoi->resizeForVideo( resizeWidth / 320 );
 				 //
@@ -993,21 +999,39 @@ namespace PerSearch {
 
 					 // background
 					 foregroundImg = cv::Scalar::all(0);
-					 imag.copyTo(foregroundImg, fgMaskMOG);
-					 pMOG->operator()(imag, fgMaskMOG,0.1);
-					 
-					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(71,71), 3.5,3.5);
-					 cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
-					 //cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(51,51), 3.5,3.5);
+					 pMOG->operator()(imag, fgMaskMOG, 0.005);
+						cv::Mat kernel = (cv::Mat_<double>(3,3) << 1,1,1,1,1,1,1,1,1);
+						foregroundImg = cv::Scalar::all(0);
+						cv::GaussianBlur(fgMaskMOG, ImgCheck, cv::Size(41,41), 15,15);
+						cv::threshold(ImgCheck, ImgCheck, 10, 255 ,cv::THRESH_BINARY);
+						cv::filter2D(ImgCheck, ImgCheck, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
+						imag.copyTo(foregroundImg, ImgCheck);
+						cv::imshow("ImgCheck", foregroundImg);
+						foregroundImg = cv::Scalar::all(0);
+						cv::GaussianBlur(fgMaskMOG, ImgCheck2, cv::Size(21,21), 15,15);
+						cv::threshold(ImgCheck2, ImgCheck2, 10, 255 ,cv::THRESH_BINARY);
+						cv::filter2D(ImgCheck2, ImgCheck2, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
+						imag.copyTo(foregroundImg, ImgCheck2);
+						cv::imshow("ImgCheck2", foregroundImg);
+						foregroundImg = cv::Scalar::all(0);
+						cv::GaussianBlur(fgMaskMOG, ImgCheck3, cv::Size(11,11), 15,15);
+						cv::threshold(ImgCheck3, ImgCheck3, 10, 255 ,cv::THRESH_BINARY);
+						cv::filter2D(ImgCheck3, ImgCheck3, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
+						imag.copyTo(foregroundImg, ImgCheck3);
+						cv::imshow("ImgCheck3", foregroundImg);
+					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(21,21), 3.5,3.5);
+						
 					// cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
+					 //cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(51,51), 3.5,3.5);
+					 cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
 					 foregroundImg = cv::Scalar::all(0);
-					 cv::inRange(fgMaskMOG, 10, 255, fgMaskMOG);
+					 //!!!!cv::inRange(fgMaskMOG, 10, 255, fgMaskMOG);
 						// матрица
-						cv::Mat kernel = (cv::Mat_<double>(3,3) << 1, 1, 1, 1, 1, 1, 1, 1, 1);
+					 //cv::Mat kernel = (cv::Mat_<double>(5,5) << 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1);
 
 						// накладываем фильтр
 						
-						cv::filter2D(fgMaskMOG, fgMaskMOG, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
+					 cv::filter2D(fgMaskMOG, fgMaskMOG, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
 
 					 imag.copyTo(foregroundImg, fgMaskMOG);
 					 //pMOG->getBackgroundImage(fgMaskMOG);
@@ -1036,7 +1060,7 @@ namespace PerSearch {
 							rec.width = cvRound(rec.width*0.8);
 							rec.y += cvRound(rec.height*0.07);
 							rec.height = cvRound(rec.height*0.8);
-							cv::rectangle(imag, rec.tl(), rec.br(), cv::Scalar(0,255,0), 3); // прямоугольник вокруг найденных объектов
+							cv::rectangle(foregroundImg, rec.tl(), rec.br(), cv::Scalar(0,255,0), 3); // прямоугольник вокруг найденных объектов
 						
 							//рисуем число в углу
 							char buffer[10];
@@ -1044,7 +1068,7 @@ namespace PerSearch {
 							cv::Point textOrg(290,30);
 							cv::putText(imag, buffer, textOrg, fontFace, fontScale, CV_RGB(0,255,0), thickness,8); // надпись в углу кол-во людей на кадре
 						
-							cv::circle(imag,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
+							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
 
 					 // Отрисовать все ROI на кадре
