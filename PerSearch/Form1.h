@@ -5,6 +5,7 @@
 #include "myFunction.h"
 #include "myRoi.h"
 #include <fstream>
+#include "Person.h"
 
 // Global Obj
 std::string filesDir; // Директория с путем к папке Текущая_дир//Files// где лежат все файлы
@@ -960,108 +961,91 @@ namespace PerSearch {
 				 cv::HOGDescriptor HGDES; // хог дескриптор
 				 cv::Mat imag; // переменная для хранения кадра
 				 HGDES.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector()); // сам хог дескриптор с свм классификатором
+				 // Окна
 				 cv::namedWindow("Распознание пешеходов", CV_WINDOW_AUTOSIZE); // окно для вывода кадра с найденными объектами
-				
-				 //
 				 cv::namedWindow("Background", CV_WINDOW_AUTOSIZE);
-				 cv::namedWindow("Sub", CV_WINDOW_AUTOSIZE);
-				 cv::namedWindow("ImgCheck", CV_WINDOW_AUTOSIZE);
-				 cv::namedWindow("ImgCheck2", CV_WINDOW_AUTOSIZE);
-				 cv::namedWindow("ImgCheck3", CV_WINDOW_AUTOSIZE);
-				 ///
+				 cv::namedWindow("Updated scene", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("MyCheckWindow", CV_WINDOW_AUTOSIZE);
+				 // Кисти
 				 int fontFace = CV_FONT_HERSHEY_COMPLEX_SMALL; //стиль фонта
 				 double fontScale = 2; //2
 				 int thickness = 2;  //2
-
+				 // Переменные для сцены
 				 cv::Ptr<cv::BackgroundSubtractor> pMOG;
 				 pMOG= new cv::BackgroundSubtractorMOG();
 				 cv::Mat fgMaskMOG;
 				 cv::Mat foregroundImg;
-				 cv::Mat Img;
-				 cv::Mat ImgCheck;
-				 cv::Mat ImgCheck2;
-				 cv::Mat ImgCheck3;
+				 cv::Mat kernel = (cv::Mat_<double>(3,3) << 1,1,1,1,1,1,1,1,1);	
 				 // Привести ROI к соотносимым значениям
 				 myCurrentRoi->resizeForVideo( resizeWidth / 320 );
 				 //
-
-
-				 
-
+				 int counter = 0;
+				 //
+				 std::ofstream fout(filesDir+"SavedParams\\log.txt");
+				 fout << "Analyzed file:	" << loadFileName << "\n";
+				 fout << "Width frame: " << resizeWidth << "\n";
+				 fout << "Height frame: " << resizeHeight << "\n";
+				 std::ofstream checkout(filesDir+"SavedParams\\logcollision.txt");
+				 checkout << "Analyzed file:	" << loadFileName << "\n";
+				 checkout << "Width frame: " << resizeWidth << "\n";
+				 checkout << "Height frame: " << resizeHeight << "\n";
+				 //
+				 Person myPersons; // класс для отслеживания объектов
+				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
 					 video >> imag; // считываем кадр	
 					 if (imag.empty()) // если не смогли считать - выход из цикла
 						break;
-					
+					 counter++;
+					 fout << "Frame №	" << counter << " ----------------------\n";
+					 checkout << "Frame №	" << counter << " ----------------------\n";
 					 // Привести разрешение видео к соотносимым значениям
 					 if ( resolutionForResize ) cv::resize(imag,imag,cv::Size(resizeWidth,resizeHeight),0,0,1);
 					 //
-
 					 // background
 					 foregroundImg = cv::Scalar::all(0);
 					 pMOG->operator()(imag, fgMaskMOG, 0.005);
-						cv::Mat kernel = (cv::Mat_<double>(3,3) << 1,1,1,1,1,1,1,1,1);
-						foregroundImg = cv::Scalar::all(0);
-						cv::GaussianBlur(fgMaskMOG, ImgCheck, cv::Size(41,41), 15,15);
-						cv::threshold(ImgCheck, ImgCheck, 10, 255 ,cv::THRESH_BINARY);
-						cv::filter2D(ImgCheck, ImgCheck, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
-						imag.copyTo(foregroundImg, ImgCheck);
-						cv::imshow("ImgCheck", foregroundImg);
-						foregroundImg = cv::Scalar::all(0);
-						cv::GaussianBlur(fgMaskMOG, ImgCheck2, cv::Size(21,21), 15,15);
-						cv::threshold(ImgCheck2, ImgCheck2, 10, 255 ,cv::THRESH_BINARY);
-						cv::filter2D(ImgCheck2, ImgCheck2, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
-						imag.copyTo(foregroundImg, ImgCheck2);
-						cv::imshow("ImgCheck2", foregroundImg);
-						foregroundImg = cv::Scalar::all(0);
-						cv::GaussianBlur(fgMaskMOG, ImgCheck3, cv::Size(11,11), 15,15);
-						cv::threshold(ImgCheck3, ImgCheck3, 10, 255 ,cv::THRESH_BINARY);
-						cv::filter2D(ImgCheck3, ImgCheck3, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
-						imag.copyTo(foregroundImg, ImgCheck3);
-						cv::imshow("ImgCheck3", foregroundImg);
-					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(21,21), 3.5,3.5);
-						
-					// cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
-					 //cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(51,51), 3.5,3.5);
+					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(41,41), 10,10);
 					 cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
-					 foregroundImg = cv::Scalar::all(0);
-					 //!!!!cv::inRange(fgMaskMOG, 10, 255, fgMaskMOG);
-						// матрица
-					 //cv::Mat kernel = (cv::Mat_<double>(5,5) << 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1);
-
-						// накладываем фильтр
-						
+					 foregroundImg = cv::Scalar::all(0);				 
 					 cv::filter2D(fgMaskMOG, fgMaskMOG, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
-
 					 imag.copyTo(foregroundImg, fgMaskMOG);
-					 //pMOG->getBackgroundImage(fgMaskMOG);
-					 //
-					 
-
-
+					 // HOG 
 					 std::vector<cv::Rect> detect, detect_filter; // массивы для хранения найденных
-					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(8,8), cv::Size(0,0), 1.05, 2); // мультискейл поиск было 8 8 32 32
+					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(8,8), cv::Size(16,16), 1.05, 2); // мультискейл поиск было 8 8 32 32
 					
 					 size_t i, j; //для пробежки по найденным
+					 fout << "Object's on frame in detect:	" << detect.size() << "\n";
 					 for (i=0; i<detect.size(); i++) 
 					 {
 						cv::Rect r = detect[i];
+						fout << "+Object's №: " << i << "\n";
+						fout << " Coordinate: " << r << "\n";
 						for (j=0; j<detect.size(); j++) 
 							if (j!=i && (r & detect[j]) == r)
 								break;
 						if (j== detect.size())
 							detect_filter.push_back(r); // добавляем в конец
 					 }
+					 
+					 if ( detect.size() != detect_filter.size() ) fout << "				-----rejected------" << "\n";
+					 fout << "Object's on frame in detect_filter:	" << detect_filter.size() << "\n";
+					 // 
+					 cv::Mat myCheckImage;
+					 foregroundImg.copyTo(myCheckImage);
+					 //
 					 for (i=0; i<detect_filter.size(); i++) 
 					 {
 							//обводим найденных
 							cv::Rect rec = detect_filter[i];
+							fout << "+Object's №: " << i << "\n";
+							fout << " Coordinate: " << rec << "\n";
 							rec.x += cvRound(rec.width*0.1);
 							rec.width = cvRound(rec.width*0.8);
 							rec.y += cvRound(rec.height*0.07);
 							rec.height = cvRound(rec.height*0.8);
 							cv::rectangle(foregroundImg, rec.tl(), rec.br(), cv::Scalar(0,255,0), 3); // прямоугольник вокруг найденных объектов
-						
+
 							//рисуем число в углу
 							char buffer[10];
 							_i64toa(detect_filter.size(), buffer, 10); // преобразуем int64 в char
@@ -1070,7 +1054,22 @@ namespace PerSearch {
 						
 							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
-
+					 // MOE
+					 //cv::Mat myCheckImage = foregroundImg;
+					 myPersons.checkObjForTracking(detect_filter);
+					 checkout << "Object's on frame in myPersons:	" << myPersons.getCountofPerson() << "\n";
+					 for (i = 0; i < myPersons.getCountofPerson(); i++)
+					 {
+						 cv::Rect rec = myPersons.getVector(i);
+						 checkout << "+Object's №: " << i << "\n";
+						 checkout << " Coordinate: " << rec << "\n";
+						 rec.x += cvRound(rec.width*0.1);
+						 rec.width = cvRound(rec.width*0.8);
+						 rec.y += cvRound(rec.height*0.07);
+						 rec.height = cvRound(rec.height*0.8);
+						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3); // прямоугольник вокруг найденных объектов
+					 }
+					 //
 					 // Отрисовать все ROI на кадре
 					 for (int i = 0; i < myCurrentRoi->getAmountRoi(); i++) {
 							myCurrentRoi->setRoi(i);
@@ -1081,12 +1080,15 @@ namespace PerSearch {
 
 					 cv::imshow("Распознание пешеходов", imag);
 					 cv::imshow("Background", fgMaskMOG);
-					 cv::imshow("Sub", foregroundImg);
+					 cv::imshow("Updated scene", foregroundImg);
+					 cv::imshow("MyCheckWindow", myCheckImage);
 					 if (cv::waitKey(1)>=0){
 					 	break;
 					 }
 				 }
 				 cvDestroyAllWindows();
+				 fout.close();
+				 checkout.close();
 		 }
 };// Окончание
 }
