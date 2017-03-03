@@ -2,6 +2,9 @@
 #include "Person.h"
 #include <math.h>
 
+
+#include <fstream>
+
 Person::Person () {
 	countPersonOnFrame = 0;
 }
@@ -13,12 +16,15 @@ void Person::checkObjForTracking ( std::vector<cv::Rect> detect) {
 	for (int i = 0; i < detect.size(); i++) {
 		cv::Rect rack = detect[i];
 		for (int j = 0; j < this->person.size() && !updateFlag; j++) {
-			if ( abs((rack.x+rack.width/2) - (this->person[j].x+this->person[j].width/2)) < 10 ) {
-				if ( abs((rack.y+rack.height/2) - (this->person[j].y + this->person[j].height/2)) < 10) {
+			if ( abs((rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2)) < 20 ) {
+				if ( abs((rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2)) < 20) {
+					this->speedPerson[j].x = ((rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2))/2;
+					this->speedPerson[j].y = ((rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2))/2;
 					this->person[j] = rack;
 					this->loosePerson[j] = 0;
 					this->checkPerson[j] = true;
 					updateFlag = true;
+					this->checkRealPerson[j] += 1;
 				}
 			}
 		}
@@ -27,18 +33,60 @@ void Person::checkObjForTracking ( std::vector<cv::Rect> detect) {
 			this->loosePerson.push_back(0);
 			this->checkPerson.push_back(true);
 			this->countPersonOnFrame++;
+			this->checkRealPerson.push_back(1);
+			this->speedPerson.push_back(cv::Point(0,0));
 		}
 		updateFlag = false;
 	}
 	for (int i = 0; i < this->person.size(); i++) {
-		if ( !this->checkPerson[i] ) this->loosePerson[i] += 1;
+		if ( !this->checkPerson[i] ) {
+			this->loosePerson[i] += 1;
+			this->person[i].x += this->speedPerson[i].x;
+			this->person[i].y += this->speedPerson[i].y;
+			if ( this->checkRealPerson[i] < 3 )
+				this->checkRealPerson[i] = -100;
+		}
 	}
-	// Проверку надо на включающие друг друга прямоугольники
+
+	// Скорость почему то уводить назад?!
+	removeNestedRect();
+	removeUnrealPerson();
 	updateVector();
+	
 }
 
-int Person::getCountofPerson() {
+int Person::getCountofPerson () {
 	return countPersonOnFrame;
+}
+
+void Person::removeUnrealPerson () {
+	for (int i = 0; i < this->person.size(); i++) {
+		if ( this->checkRealPerson[i] == -100 ) {
+			loosePerson.erase (loosePerson.begin() + i);
+			person.erase (person.begin() + i);
+			checkPerson.erase (checkPerson.begin() + i);
+			countPersonOnFrame--;
+			this->checkRealPerson.erase (this->checkRealPerson.begin() + i);
+			this->speedPerson.erase(this->speedPerson.begin() + i);
+		}
+	}
+}
+
+void Person::removeNestedRect () {	
+	for (int i = 0; i < this->person.size(); i++) {
+		cv::Rect rack = this->person[i];
+		for ( int j = 0; j < this->person.size(); j++) {
+			if ( j != i && (rack & this->person[j]) == this->person[j] ) {
+				this->loosePerson.erase (this->loosePerson.begin() + i);
+				this->person.erase (this->person.begin() + i);
+				this->checkPerson.erase ( this->checkPerson.begin() + i);
+				this->checkRealPerson.erase ( this->checkRealPerson.begin() + i);
+				this->countPersonOnFrame--;
+				this->speedPerson.erase(this->speedPerson.begin() + i);
+				i--;
+			}
+		}
+	}
 }
 
 void Person::updateVector () {
@@ -48,12 +96,17 @@ void Person::updateVector () {
 			person.erase (person.begin() + i);
 			checkPerson.erase ( checkPerson.begin() + i);
 			countPersonOnFrame--;
+			this->checkRealPerson.erase ( this->checkRealPerson.begin() + i);
+			this->speedPerson.erase(this->speedPerson.begin() + i);
 		}
 	}	
 }
 
 cv::Rect Person::getVector (int i) {
-	return person[i];
+	if ( this->checkRealPerson[i] > 2 )
+		return person[i];
+	cv::Rect retRack(-100,-100,-100,-100);
+	return retRack;
 }
 
 bool Person::getOtherNess (int i) {

@@ -3,11 +3,24 @@
 
 class Person {
 	private:
-		std::vector <cv::Rect> person; // Координаты пешеходов
-		std::vector <int> loosePerson; // Вектор пропуска пешеходов на объекте
-		std::vector <bool> checkPerson; // Вектор проверки на текущем кадре пешехода
-		int countPersonOnFrame; // Всего объект на данный момент в векторе
-		void Person::updateVector (); // Проверка внутри удаляем ли объект если он был пропущен более 3 кадров
+		// Координаты пешеходов
+		std::vector <cv::Rect> person; 
+		// Вектор пропуска пешеходов на объекте
+		std::vector <int> loosePerson; 
+		// Вектор проверки на текущем кадре пешехода
+		std::vector <bool> checkPerson; 
+		// Вектор проверки на ложное срабатывания. если у объекта кол-во подряд кадров <3 - ложное.
+		std::vector <int> checkRealPerson;
+		// Вектор скорости объекта
+		std::vector <cv::Point> speedPerson;
+		// Всего объект на данный момент в векторе
+		int countPersonOnFrame; 
+		// Проверка внутри удаляем ли объект если он был пропущен более 3 кадров
+		void Person::updateVector (); 
+		// Проверка на вложенные в друг друга прямоугольник. удалять будем больший
+		void Person::removeNestedRect ();
+		// Проверка на ложные и удаление если есть таковые
+		void Person::removeUnrealPerson ();
 	public:
 		// конструктор пустой в нем только countPersonOnFrame устанавливаем в 0
 		Person(); 
@@ -19,5 +32,6 @@ class Person {
 		cv::Rect getVector ( int ); 
 		// возвращаем обновляли ли мы этот объект на этом кадре
 		bool getOtherNess(int); 
+		
 		~Person(); // пустой деструктор
 };

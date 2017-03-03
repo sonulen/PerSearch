@@ -981,11 +981,11 @@ namespace PerSearch {
 				 //
 				 int counter = 0;
 				 //
-				 std::ofstream fout(filesDir+"SavedParams\\log.txt");
+				 std::ofstream fout(filesDir+"DetectResults\\log.txt");
 				 fout << "Analyzed file:	" << loadFileName << "\n";
 				 fout << "Width frame: " << resizeWidth << "\n";
 				 fout << "Height frame: " << resizeHeight << "\n";
-				 std::ofstream checkout(filesDir+"SavedParams\\logcollision.txt");
+				 std::ofstream checkout(filesDir+"DetectResults\\logcollision.txt");
 				 checkout << "Analyzed file:	" << loadFileName << "\n";
 				 checkout << "Width frame: " << resizeWidth << "\n";
 				 checkout << "Height frame: " << resizeHeight << "\n";
@@ -1056,11 +1056,13 @@ namespace PerSearch {
 					 }
 					 // MOE
 					 //cv::Mat myCheckImage = foregroundImg;
-					 myPersons.checkObjForTracking(detect_filter);
+					 myPersons.checkObjForTracking(detect);
 					 checkout << "Object's on frame in myPersons:	" << myPersons.getCountofPerson() << "\n";
 					 for (i = 0; i < myPersons.getCountofPerson(); i++)
 					 {
 						 cv::Rect rec = myPersons.getVector(i);
+						 if ( rec.x == -100 && rec.y == -100 ) 
+							 continue;
 						 checkout << "+Object's ¹: " << i << "\n";
 						 checkout << " Coordinate: " << rec << "\n";
 						 rec.x += cvRound(rec.width*0.1);
@@ -1082,6 +1084,8 @@ namespace PerSearch {
 					 cv::imshow("Background", fgMaskMOG);
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
+					 if ( counter > 200 )
+						cv::waitKey();
 					 if (cv::waitKey(1)>=0){
 					 	break;
 					 }
