@@ -36,6 +36,12 @@
     <ClCompile Include="Person.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="Man.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FramePersons.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -54,6 +60,12 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="Person.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Man.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FramePersons.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

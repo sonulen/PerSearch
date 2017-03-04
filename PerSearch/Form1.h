@@ -5,7 +5,7 @@
 #include "myFunction.h"
 #include "myRoi.h"
 #include <fstream>
-#include "Person.h"
+#include "FramePersons.h"
 
 // Global Obj
 std::string filesDir; // Директория с путем к папке Текущая_дир//Files// где лежат все файлы
@@ -727,41 +727,47 @@ namespace PerSearch {
 	}			 
 	// Обработка событий мышки на pictureBox
 	private: System::Void pictureBox1_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 System::String^ str;
-				 Drow = true;
-				 int mas[4];
-				 mas[0] = e->X;
-				 mas[1] = e->Y;
-				 mas[2] = -1;
-				 mas[3] = -1;
-				 myCurrentRoi->fillCurrentRoi(mas); 
-				 str = mas[0].ToString();
-				 textBox3->Text= str;
-				 str = mas[1].ToString();
-				 textBox4->Text= str;
+				 if ( pictureBox1->Visible == true ) {
+					 System::String^ str;
+					 Drow = true;
+					 int mas[4];
+					 mas[0] = e->X;
+					 mas[1] = e->Y;
+					 mas[2] = -1;
+					 mas[3] = -1;
+					 myCurrentRoi->fillCurrentRoi(mas); 
+					 str = mas[0].ToString();
+					 textBox3->Text= str;
+					 str = mas[1].ToString();
+					 textBox4->Text= str;
+				 }
 		 }
 	private: System::Void pictureBox1_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 int* mas = myCurrentRoi->getCurrentRoiCoord();
-				 Bitmap ^ myBitmap = gcnew Bitmap(convertStdStringToSystemString(filesDir+"SavedParams\\firstframe.jpg")); 
-				 Graphics ^ g = Graphics::FromImage(myBitmap); 
-				 if ( Drow ) {
-					 g->DrawRectangle(getPsevdoRandColor(myCurrentRoi->getCurrentNumberRoi()), mas[0], mas[1], (e->X)-mas[0], (e->Y)-mas[1]);
-					 pictureBox1->Image = myBitmap;
+				 if ( pictureBox1->Visible == true ) {
+					 int* mas = myCurrentRoi->getCurrentRoiCoord();
+					 Bitmap ^ myBitmap = gcnew Bitmap(convertStdStringToSystemString(filesDir+"SavedParams\\firstframe.jpg")); 
+					 Graphics ^ g = Graphics::FromImage(myBitmap); 
+					 if ( Drow ) {
+						 g->DrawRectangle(getPsevdoRandColor(myCurrentRoi->getCurrentNumberRoi()), mas[0], mas[1], (e->X)-mas[0], (e->Y)-mas[1]);
+						 pictureBox1->Image = myBitmap;
+					 }
 				 }
 		 }
 	private: System::Void pictureBox1_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 Drow = false;
-				 System::String^ str;
-				 int mas[4];
-				 mas[0] = -1;
-				 mas[1] = -1;
-				 mas[2] = e->X;
-				 mas[3] = e->Y;
-				 myCurrentRoi->fillCurrentRoi(mas); 
-				 str = mas[2].ToString();
-				 textBox5->Text= str;
-				 str = mas[3].ToString();
-				 textBox6->Text= str;
+				 if ( pictureBox1->Visible == true ) {
+					 Drow = false;
+					 System::String^ str;
+					 int mas[4];
+					 mas[0] = -1;
+					 mas[1] = -1;
+					 mas[2] = e->X;
+					 mas[3] = e->Y;
+					 myCurrentRoi->fillCurrentRoi(mas); 
+					 str = mas[2].ToString();
+					 textBox5->Text= str;
+					 str = mas[3].ToString();
+					 textBox6->Text= str;
+				 }
 		 }
 	// Обработка ввода последних координат ROI
 	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -990,7 +996,7 @@ namespace PerSearch {
 				 checkout << "Width frame: " << resizeWidth << "\n";
 				 checkout << "Height frame: " << resizeHeight << "\n";
 				 //
-				 Person myPersons; // класс для отслеживания объектов
+				 FramePersons checkPersons;
 				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
 					 video >> imag; // считываем кадр	
@@ -1055,12 +1061,12 @@ namespace PerSearch {
 							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
 					 // MOE
-					 //cv::Mat myCheckImage = foregroundImg;
-					 myPersons.checkObjForTracking(detect);
-					 checkout << "Object's on frame in myPersons:	" << myPersons.getCountofPerson() << "\n";
-					 for (i = 0; i < myPersons.getCountofPerson(); i++)
+
+					 checkPersons.checkObjForTrack(detect);
+					 checkout << "Object's on frame in myPersons:	" << checkPersons.getCountofPerson() << "\n";
+					 for (i = 0; i < checkPersons.getCountofPerson(); i++)
 					 {
-						 cv::Rect rec = myPersons.getVector(i);
+						 cv::Rect rec = checkPersons.getVector(i);
 						 if ( rec.x == -100 && rec.y == -100 ) 
 							 continue;
 						 checkout << "+Object's №: " << i << "\n";
@@ -1084,8 +1090,7 @@ namespace PerSearch {
 					 cv::imshow("Background", fgMaskMOG);
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
-					 if ( counter > 200 )
-						cv::waitKey();
+					 
 					 if (cv::waitKey(1)>=0){
 					 	break;
 					 }

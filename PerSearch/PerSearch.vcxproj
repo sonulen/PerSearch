@@ -152,6 +152,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="FramePersons.cpp" />
+    <ClCompile Include="Man.cpp" />
     <ClCompile Include="myFunction.cpp" />
     <ClCompile Include="myRoi.cpp" />
     <ClCompile Include="PerSearch.cpp" />
@@ -167,6 +169,8 @@
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="FramePersons.h" />
+    <ClInclude Include="Man.h" />
     <ClInclude Include="myFunction.h" />
     <ClInclude Include="myRoi.h" />
     <ClInclude Include="Person.h" />

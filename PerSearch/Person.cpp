@@ -2,10 +2,13 @@
 #include "Person.h"
 #include <math.h>
 
-
 #include <fstream>
 
 Person::Person () {
+	this->distanceDriftX = 20;
+	this->distanceDriftY = 20;
+	this->numberOfFramesTheObjectOfConservation = 6;
+	this->numberOfConfirmedFramesHuman = 3;
 	countPersonOnFrame = 0;
 }
 
@@ -16,15 +19,15 @@ void Person::checkObjForTracking ( std::vector<cv::Rect> detect) {
 	for (int i = 0; i < detect.size(); i++) {
 		cv::Rect rack = detect[i];
 		for (int j = 0; j < this->person.size() && !updateFlag; j++) {
-			if ( abs((rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2)) < 20 ) {
-				if ( abs((rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2)) < 20) {
-					this->speedPerson[j].x = ((rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2))/2;
-					this->speedPerson[j].y = ((rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2))/2;
+			if ( abs((rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2)) < this->distanceDriftX ) {
+				if ( abs((rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2)) < this->distanceDriftY) {
+					this->speedPerson[j].x = (this->speedPerson[j].x + (rack.x + rack.width/2) - (this->person[j].x + this->person[j].width/2))/2;
+					this->speedPerson[j].y = (this->speedPerson[j].y + (rack.y + rack.height/2) - (this->person[j].y + this->person[j].height/2))/2;
 					this->person[j] = rack;
 					this->loosePerson[j] = 0;
 					this->checkPerson[j] = true;
 					updateFlag = true;
-					this->checkRealPerson[j] += 1;
+					this->checkRealPerson[j] ++;
 				}
 			}
 		}
@@ -43,7 +46,7 @@ void Person::checkObjForTracking ( std::vector<cv::Rect> detect) {
 			this->loosePerson[i] += 1;
 			this->person[i].x += this->speedPerson[i].x;
 			this->person[i].y += this->speedPerson[i].y;
-			if ( this->checkRealPerson[i] < 3 )
+			if ( this->checkRealPerson[i] < this->numberOfConfirmedFramesHuman )
 				this->checkRealPerson[i] = -100;
 		}
 	}
@@ -91,7 +94,7 @@ void Person::removeNestedRect () {
 
 void Person::updateVector () {
 	for (int i = 0; i < person.size(); i++) {
-		if ( loosePerson[i] > 6 ) {
+		if ( loosePerson[i] > this->numberOfFramesTheObjectOfConservation ) {
 			loosePerson.erase (loosePerson.begin() + i);
 			person.erase (person.begin() + i);
 			checkPerson.erase ( checkPerson.begin() + i);
@@ -103,7 +106,7 @@ void Person::updateVector () {
 }
 
 cv::Rect Person::getVector (int i) {
-	if ( this->checkRealPerson[i] > 2 )
+	if ( this->checkRealPerson[i] >= this->numberOfConfirmedFramesHuman )
 		return person[i];
 	cv::Rect retRack(-100,-100,-100,-100);
 	return retRack;

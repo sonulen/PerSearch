@@ -21,6 +21,17 @@ class Person {
 		void Person::removeNestedRect ();
 		// Проверка на ложные и удаление если есть таковые
 		void Person::removeUnrealPerson ();
+		
+		// Параметры настраиваемые
+		// Кол-во кадров потери 
+		int numberOfFramesTheObjectOfConservation;
+		// Расстояние отклонения объекта по Х
+		int distanceDriftX;
+		// Расстояние отклонения объекта по Y
+		int distanceDriftY;
+		// Кол-во кадров после которых подтверждаем что это человек
+		int numberOfConfirmedFramesHuman;
+
 	public:
 		// конструктор пустой в нем только countPersonOnFrame устанавливаем в 0
 		Person(); 
