@@ -6,19 +6,21 @@
 FramePersons::FramePersons() {
 	this->allCount = 0;
 	this->currentCount = 0;
-
 	this->distanceDriftX = 20;
 	this->distanceDriftY = 20;
 	this->numberOfFramesTheObjectOfConservation = 6;
 	this->numberOfConfirmedFramesHuman = 3;
-
 }
 
 FramePersons::~FramePersons() {
-
+	for (int i = 0; i < this->manOnFrame.size(); i++) {
+			this->checkPerson.erase ( this->checkPerson.begin() + i);
+			this->manOnFrame.erase ( this->manOnFrame.begin() + i);
+			this->currentCount--;
+	}
 }
 
-void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect) {
+void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect, cv::Mat Frame, std::string filesDir) {
 	for (int i = 0; i < this->manOnFrame.size(); i++ ) 
 		this->checkPerson[i] = false;
 	cv::Rect rack;
@@ -28,7 +30,7 @@ void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect) {
 		for (int j = 0; j < this->manOnFrame.size(); j++) {
 			if ( abs((rack.x + rack.width/2) - (this->manOnFrame[j].getCurrentCoord().x + this->manOnFrame[j].getCurrentCoord().width/2)) < this->distanceDriftX ) {
 				if ( abs((rack.y + rack.height/2) - (this->manOnFrame[j].getCurrentCoord().y + this->manOnFrame[j].getCurrentCoord().height/2)) < this->distanceDriftY) {
-					this->manOnFrame[j].AddCoord(rack);
+					this->manOnFrame[j].AddCoord(rack, Frame);
 					this->checkPerson[j] = true;
 					flagUpdate = true;
 				}
@@ -36,8 +38,7 @@ void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect) {
 		}
 		if ( !flagUpdate ) {
 			this->allCount++;
-			//Man rackMan(rack,allCount);
-			this->manOnFrame.push_back(Man(rack,allCount));
+			this->manOnFrame.push_back(Man(rack,allCount, this->numberOfFramesTheObjectOfConservation, this->numberOfConfirmedFramesHuman, Frame));
 			this->checkPerson.push_back(true);
 			this->currentCount++;
 		}
@@ -49,7 +50,11 @@ void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect) {
 			this->manOnFrame[i].restoreCoord(this->manOnFrame[i].getCurrentCoord());
 		}
 	}
-
+	for (int i = 0; i < this->manOnFrame.size(); i++) {
+		if ( this->manOnFrame[i].howManyLose() >= this->numberOfFramesTheObjectOfConservation && this->manOnFrame[i].isReal()) {
+			this->manOnFrame[i].deleteMan(filesDir);
+		}
+	}
 	removeUnrealPerson();
 	removeNestedRect();
 	updateFramePersons();
@@ -60,10 +65,11 @@ void FramePersons::removeNestedRect () {
 		cv::Rect rack = this->manOnFrame[i].getCurrentCoord();
 		for ( int j = 0; j < this->manOnFrame.size(); j++) {
 			if ( j != i && (rack & this->manOnFrame[j].getCurrentCoord()) == this->manOnFrame[j].getCurrentCoord() ) {
-				this->checkPerson.erase ( this->checkPerson.begin() + j);
-				this->manOnFrame.erase ( this->manOnFrame.begin() + j);
+				this->checkPerson.erase ( this->checkPerson.begin() + i);
+				this->manOnFrame.erase ( this->manOnFrame.begin() + i);
 				this->currentCount--;
-				j--;
+				i--;
+				break;
 			}
 		}
 	}
@@ -99,4 +105,12 @@ cv::Rect FramePersons::getVector (int i) {
 
 int FramePersons::getCountofPerson() {
 	return this->currentCount;
+}
+
+int FramePersons::trackCount (int i) {
+	return this->manOnFrame[i].getCountofWay();
+}
+
+cv::Point FramePersons::getTrackPointofMan (int i,int j) {
+	return this->manOnFrame[i].getTrackPoint(j);
 }

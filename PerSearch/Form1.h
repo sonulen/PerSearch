@@ -6,6 +6,7 @@
 #include "myRoi.h"
 #include <fstream>
 #include "FramePersons.h"
+#include <ctime>
 
 // Global Obj
 std::string filesDir; // Директория с путем к папке Текущая_дир//Files// где лежат все файлы
@@ -984,18 +985,28 @@ namespace PerSearch {
 				 cv::Mat kernel = (cv::Mat_<double>(3,3) << 1,1,1,1,1,1,1,1,1);	
 				 // Привести ROI к соотносимым значениям
 				 myCurrentRoi->resizeForVideo( resizeWidth / 320 );
-				 //
+				 // Кол-во кадров
 				 int counter = 0;
 				 //
-				 std::ofstream fout(filesDir+"DetectResults\\log.txt");
+				 // Необходимо в filesDir добавить текущую Видео_Дата_папку
+				 filesDir += "DetectResults\\";
+				 char buffer[80];
+				 time_t seconds = time(NULL);
+				 tm* timeinfo = localtime(&seconds);
+				 char* format = "%A %B %d %Y %H.%M.%S";
+				 std::strftime(buffer, 80, format, timeinfo);
+				 filesDir += buffer;
+				 System::IO::Directory::CreateDirectory(convertStdStringToSystemString(filesDir));
+				 //
+				 std::ofstream fout(filesDir+"\\Detectors_Results.txt");
 				 fout << "Analyzed file:	" << loadFileName << "\n";
 				 fout << "Width frame: " << resizeWidth << "\n";
 				 fout << "Height frame: " << resizeHeight << "\n";
-				 std::ofstream checkout(filesDir+"DetectResults\\logcollision.txt");
+				 std::ofstream checkout(filesDir+"\\Persons_Search_Results.txt");
 				 checkout << "Analyzed file:	" << loadFileName << "\n";
 				 checkout << "Width frame: " << resizeWidth << "\n";
 				 checkout << "Height frame: " << resizeHeight << "\n";
-				 //
+				 // Инициализируем свой класс для отслеживания и трекирования
 				 FramePersons checkPersons;
 				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
@@ -1046,10 +1057,7 @@ namespace PerSearch {
 							cv::Rect rec = detect_filter[i];
 							fout << "+Object's №: " << i << "\n";
 							fout << " Coordinate: " << rec << "\n";
-							rec.x += cvRound(rec.width*0.1);
-							rec.width = cvRound(rec.width*0.8);
-							rec.y += cvRound(rec.height*0.07);
-							rec.height = cvRound(rec.height*0.8);
+							
 							cv::rectangle(foregroundImg, rec.tl(), rec.br(), cv::Scalar(0,255,0), 3); // прямоугольник вокруг найденных объектов
 
 							//рисуем число в углу
@@ -1061,21 +1069,26 @@ namespace PerSearch {
 							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
 					 // MOE
-
-					 checkPersons.checkObjForTrack(detect);
+					 checkPersons.checkObjForTrack(detect, myCheckImage, filesDir);
 					 checkout << "Object's on frame in myPersons:	" << checkPersons.getCountofPerson() << "\n";
 					 for (i = 0; i < checkPersons.getCountofPerson(); i++)
 					 {
 						 cv::Rect rec = checkPersons.getVector(i);
 						 if ( rec.x == -100 && rec.y == -100 ) 
 							 continue;
+						 // Запись в файл
 						 checkout << "+Object's №: " << i << "\n";
 						 checkout << " Coordinate: " << rec << "\n";
+						 // прямоугольник вокруг найденных объектов
 						 rec.x += cvRound(rec.width*0.1);
 						 rec.width = cvRound(rec.width*0.8);
 						 rec.y += cvRound(rec.height*0.07);
 						 rec.height = cvRound(rec.height*0.8);
-						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3); // прямоугольник вокруг найденных объектов
+						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3); 
+						 // Траектория
+						 for (int j = 0; j < checkPersons.trackCount(i); j++ ) {
+							 cv::circle(myCheckImage,checkPersons.getTrackPointofMan(i,j),5,CV_RGB(0,0,205),-1,8,00);
+						 }
 					 }
 					 //
 					 // Отрисовать все ROI на кадре
@@ -1091,8 +1104,10 @@ namespace PerSearch {
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
 					 
+					 
 					 if (cv::waitKey(1)>=0){
 					 	break;
+						checkPersons.~FramePersons();
 					 }
 				 }
 				 cvDestroyAllWindows();
