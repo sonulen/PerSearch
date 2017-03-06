@@ -17,7 +17,6 @@ Man::Man (cv::Rect rack, int count, int FramesTheObjectOfConservation, int Confi
 }
 
 Man::~Man() {
-	
 	manWay.~vector();
 }
 

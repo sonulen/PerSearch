@@ -13,6 +13,7 @@ std::string filesDir; // Директория с путем к папке Текущая_дир//Files// где леж
 std::string loadFileName; // Путь к выбранному файлу
 int timeInterval; // Временной интервал
 bool resolutionForResize; // Переменная для хранения решения изменения размера изображения
+bool flagForOnClickPictureBox = false;
 myRoi* myCurrentRoi; // Класс для хранения информации о ROI
 bool Drow; // переменная для проверки отрисовки
 int defaultWidth; // Изначальная ширина видео
@@ -21,6 +22,13 @@ int resizeWidth; // Выбранная ширина видео
 int resizeHeight; // Выбранная высота видео
 int coefficientWidth; // Во сколько раз сжали изображение по ширине
 int coefficientHeight; // Во сколько раз сжали изображение по высоте
+std::vector <int> detectResultsOnFrames; // результаты детектора на всех кадрах
+std::vector <int> myPersonsResultsOnFrames; // результаты класса FramePersons на всех кадрах
+std::vector <int> resultForRoiOne;
+std::vector <int> resultForRoiTwo;
+std::vector <int> resultForRoiThree;
+std::vector <int> resultForRoiFour;
+std::vector <int> resultForRoiFive;
 
 namespace PerSearch {
 
@@ -714,7 +722,7 @@ namespace PerSearch {
 					Graphics ^ g = Graphics::FromImage(myBitmap); 
 					g->DrawRectangle(getPsevdoRandColor(myCurrentRoi->getCurrentNumberRoi()),mas[0],mas[1],(mas[2]-mas[0]),(mas[3]-mas[1]));
 					pictureBox1->Image = myBitmap;
-					
+					flagForOnClickPictureBox = true;
 				 }
 				 catch ( int inspect )
 				 {
@@ -728,7 +736,7 @@ namespace PerSearch {
 	}			 
 	// Обработка событий мышки на pictureBox
 	private: System::Void pictureBox1_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 if ( pictureBox1->Visible == true ) {
+				 if ( pictureBox1->Visible == true && flagForOnClickPictureBox ) {
 					 System::String^ str;
 					 Drow = true;
 					 int mas[4];
@@ -744,7 +752,7 @@ namespace PerSearch {
 				 }
 		 }
 	private: System::Void pictureBox1_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 if ( pictureBox1->Visible == true ) {
+				 if ( pictureBox1->Visible == true && flagForOnClickPictureBox) {
 					 int* mas = myCurrentRoi->getCurrentRoiCoord();
 					 Bitmap ^ myBitmap = gcnew Bitmap(convertStdStringToSystemString(filesDir+"SavedParams\\firstframe.jpg")); 
 					 Graphics ^ g = Graphics::FromImage(myBitmap); 
@@ -755,7 +763,7 @@ namespace PerSearch {
 				 }
 		 }
 	private: System::Void pictureBox1_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
-				 if ( pictureBox1->Visible == true ) {
+				 if ( pictureBox1->Visible == true && flagForOnClickPictureBox ) {
 					 Drow = false;
 					 System::String^ str;
 					 int mas[4];
@@ -800,6 +808,7 @@ namespace PerSearch {
 						}
 						pictureBox1->Image = myBitmap;
 						fout.close();
+						flagForOnClickPictureBox = false;
 						// Уберем кнопку принять ROI и отобразим элементы выбора разрешения
 						button4->Visible = false;
 						radioButton1->Visible = true;
@@ -986,7 +995,7 @@ namespace PerSearch {
 				 // Привести ROI к соотносимым значениям
 				 myCurrentRoi->resizeForVideo( resizeWidth / 320 );
 				 // Кол-во кадров
-				 int counter = 0;
+				 int counter = -1;
 				 //
 				 // Необходимо в filesDir добавить текущую Видео_Дата_папку
 				 filesDir += "DetectResults\\";
@@ -1009,6 +1018,21 @@ namespace PerSearch {
 				 // Инициализируем свой класс для отслеживания и трекирования
 				 FramePersons checkPersons;
 				 //
+				 // Для проходов через ROI на всех кадраx
+				 if ( myCurrentRoi->getAmountRoi() > 1 ) {
+					 std::vector <int> resultForRoiOne;
+					 std::vector <int> resultForRoiTwo;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 2 ) {
+					 std::vector <int> resultForRoiThree;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 3 ) {
+					 std::vector <int> resultForRoiFour;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 4 ) {
+					 std::vector <int> resultForRoiFive;
+				 }
+				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
 					 video >> imag; // считываем кадр	
 					 if (imag.empty()) // если не смогли считать - выход из цикла
@@ -1030,7 +1054,13 @@ namespace PerSearch {
 					 // HOG 
 					 std::vector<cv::Rect> detect, detect_filter; // массивы для хранения найденных
 					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(8,8), cv::Size(16,16), 1.05, 2); // мультискейл поиск было 8 8 32 32
-					
+					 // Добавить результат в ROI 
+					 if ( myCurrentRoi->getAmountRoi() > 0 ) resultForRoiOne.push_back(0);
+					 if ( myCurrentRoi->getAmountRoi() > 1 ) resultForRoiTwo.push_back(0);
+					 if ( myCurrentRoi->getAmountRoi() > 2 ) resultForRoiThree.push_back(0);
+					 if ( myCurrentRoi->getAmountRoi() > 3 ) resultForRoiFour.push_back(0);
+					 if ( myCurrentRoi->getAmountRoi() > 4 ) resultForRoiFive.push_back(0);
+					 //
 					 size_t i, j; //для пробежки по найденным
 					 fout << "Object's on frame in detect:	" << detect.size() << "\n";
 					 for (i=0; i<detect.size(); i++) 
@@ -1047,7 +1077,7 @@ namespace PerSearch {
 					 
 					 if ( detect.size() != detect_filter.size() ) fout << "				-----rejected------" << "\n";
 					 fout << "Object's on frame in detect_filter:	" << detect_filter.size() << "\n";
-					 // 
+					 // Скопируем текущий обработанный кадр
 					 cv::Mat myCheckImage;
 					 foregroundImg.copyTo(myCheckImage);
 					 //
@@ -1068,6 +1098,8 @@ namespace PerSearch {
 						
 							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
+					 // Запись результатов детектора в вектор итоговый на каждом кадре
+					 detectResultsOnFrames.push_back(detect_filter.size());
 					 // MOE
 					 checkPersons.checkObjForTrack(detect, myCheckImage, filesDir);
 					 checkout << "Object's on frame in myPersons:	" << checkPersons.getCountofPerson() << "\n";
@@ -1084,13 +1116,28 @@ namespace PerSearch {
 						 rec.width = cvRound(rec.width*0.8);
 						 rec.y += cvRound(rec.height*0.07);
 						 rec.height = cvRound(rec.height*0.8);
-						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3); 
+						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3);
+						 // Попадает ли объект в какую либо ROI
+						 for (int i = 0; i < myCurrentRoi->getAmountRoi(); i++) {
+							myCurrentRoi->setRoi(i);
+							int* nextMas = myCurrentRoi->getCurrentRoiCoord();
+							if ( (rec.x+rec.width/2) >= nextMas[0] && (rec.x+rec.width/2) <= nextMas[2] ) {
+								if ( (rec.y+rec.height/2) >= nextMas[1] && (rec.y+rec.height/2) <= nextMas[3] ) {
+									if ( i == 0 ) resultForRoiOne.back() += 1;
+									if ( i == 1 ) resultForRoiTwo.back() += 1;
+									if ( i == 2 ) resultForRoiThree.back() += 1;
+									if ( i == 3 ) resultForRoiFour.back() += 1;
+									if ( i == 4 ) resultForRoiFive.back() += 1;
+								}
+							}
+						 }
 						 // Траектория
 						 for (int j = 0; j < checkPersons.trackCount(i); j++ ) {
 							 cv::circle(myCheckImage,checkPersons.getTrackPointofMan(i,j),5,CV_RGB(0,0,205),-1,8,00);
 						 }
 					 }
 					 //
+					 myPersonsResultsOnFrames.push_back(checkPersons.getCountofPerson());
 					 // Отрисовать все ROI на кадре
 					 for (int i = 0; i < myCurrentRoi->getAmountRoi(); i++) {
 							myCurrentRoi->setRoi(i);
@@ -1098,7 +1145,39 @@ namespace PerSearch {
 							cv::rectangle(imag, cv::Point(nextMas[0],nextMas[1]), cv::Point(nextMas[2],nextMas[3]), CV_RGB(myCurrentRoi->getCurrentNumberRoi()*50,0,0), 1);
 						}					 
 					 //
-
+					 // Записать результаты ROI в файлы
+						 if ( myCurrentRoi->getAmountRoi() > 0 ) {
+							 std::ofstream foutForRoi(filesDir+"\\ROI1_Results.txt", std::ios_base::app);
+							 foutForRoi << "На кадре № " + std::to_string(counter) + " через ROI1 прошло = ";
+							 foutForRoi << resultForRoiOne.back() << "\n";
+							 foutForRoi.close();
+						 }
+						 if ( myCurrentRoi->getAmountRoi() > 1 ) {
+							 std::ofstream foutForRoi(filesDir+"\\ROI2_Results.txt", std::ios_base::app);
+							 foutForRoi << "На кадре № " + std::to_string(counter) + " через ROI2 прошло = ";
+							 foutForRoi << resultForRoiTwo.back() << "\n";
+							 foutForRoi.close();
+						 }
+						 if ( myCurrentRoi->getAmountRoi() > 2 ) {
+							 std::ofstream foutForRoi(filesDir+"\\ROI3_Results.txt", std::ios_base::app);
+							 foutForRoi << "На кадре № " + std::to_string(counter) + " через ROI3 прошло = ";
+							 foutForRoi << resultForRoiThree.back() << "\n";
+							 foutForRoi.close();
+						 }
+						 if ( myCurrentRoi->getAmountRoi() > 3 ) {
+							 std::ofstream foutForRoi(filesDir+"\\ROI4_Results.txt", std::ios_base::app);
+							 foutForRoi << "На кадре № " + std::to_string(counter) + " через ROI4 прошло = ";
+							 foutForRoi << resultForRoiFour.back() << "\n";
+							 foutForRoi.close();
+						 }
+						 if ( myCurrentRoi->getAmountRoi() > 4 ) {
+							 std::ofstream foutForRoi(filesDir+"\\ROI5_Results.txt", std::ios_base::app);
+							 foutForRoi << "На кадре № " + std::to_string(counter) + " через ROI5 прошло = ";
+							 foutForRoi << resultForRoiFive.back() << "\n";
+							 foutForRoi.close();
+						 }
+					 //
+					 // Отобразить результирующие изображения
 					 cv::imshow("Распознание пешеходов", imag);
 					 cv::imshow("Background", fgMaskMOG);
 					 cv::imshow("Updated scene", foregroundImg);

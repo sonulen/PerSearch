@@ -51,7 +51,7 @@ void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect, cv::Mat Frame
 		}
 	}
 	for (int i = 0; i < this->manOnFrame.size(); i++) {
-		if ( this->manOnFrame[i].howManyLose() >= this->numberOfFramesTheObjectOfConservation && this->manOnFrame[i].isReal()) {
+		if ( this->manOnFrame[i].howManyLose() > this->numberOfFramesTheObjectOfConservation && this->manOnFrame[i].isReal()) {
 			this->manOnFrame[i].deleteMan(filesDir);
 		}
 	}
@@ -81,6 +81,7 @@ void FramePersons::removeUnrealPerson () {
 			this->checkPerson.erase ( this->checkPerson.begin() + i);
 			this->manOnFrame.erase ( this->manOnFrame.begin() + i);
 			this->currentCount--;
+			i--;
 		}
 	}
 }
@@ -91,6 +92,7 @@ void FramePersons::updateFramePersons () {
 			this->checkPerson.erase ( this->checkPerson.begin() + i);
 			this->manOnFrame.erase ( this->manOnFrame.begin() + i);
 			this->currentCount--;
+			i--;
 		}
 	}
 }
