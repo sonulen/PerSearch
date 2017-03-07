@@ -1016,7 +1016,7 @@ namespace PerSearch {
 				 checkout << "Width frame: " << resizeWidth << "\n";
 				 checkout << "Height frame: " << resizeHeight << "\n";
 				 // Инициализируем свой класс для отслеживания и трекирования
-				 FramePersons checkPersons;
+				 FramePersons checkPersons (myCurrentRoi);
 				 //
 				 // Для проходов через ROI на всех кадраx
 				 if ( myCurrentRoi->getAmountRoi() > 1 ) {

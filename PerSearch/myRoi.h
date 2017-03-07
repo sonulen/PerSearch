@@ -1,5 +1,8 @@
 #include <string>
 
+#ifndef MYROI_H
+#define MYROI_H
+
 class myRoi {
 	private:
 		int amountRoi; // Общее кол-во ROI
@@ -33,3 +36,5 @@ class myRoi {
 		// Деструктор
 		~myRoi();
 };
+
+#endif MYROI_H

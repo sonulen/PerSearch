@@ -2,6 +2,7 @@
 #include <vector>
 #include <opencv2/opencv.hpp>
 #include "Man.h"
+#include "myRoi.h"
 
 class FramePersons {
 private:
@@ -27,9 +28,17 @@ private:
 	int numberOfFramesTheObjectOfConservation;
 	// Кол-во кадров после которых подтверждаем что это человек
 	int numberOfConfirmedFramesHuman;
+	// Ссылка на ROI класс
+	myRoi* myRoiObj;
+	// Переменна для хранения всего кол-ва прошедших подтвержденных людей
+	int manConfirmedCounter;
+	// Переменные для хранения кол-ва подтвержденных людей через ROI
+	int* masCounterForRoi;
+	// Функция для увеличивания счетчиков
+	void fillCounters(int);
 
 public:
-	FramePersons();
+	FramePersons(myRoi*);
 	~FramePersons();
 	// Посылаем сюда вектор полученный с детектора и принимаем решения, добавлять или
 	// нет объект в трек

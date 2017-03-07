@@ -3,9 +3,15 @@
 #include <math.h>
 #include "FramePersons.h"
 
-FramePersons::FramePersons() {
+FramePersons::FramePersons(myRoi* myRoiChoosen) {
+	this->myRoiObj = myRoiChoosen;
 	this->allCount = 0;
 	this->currentCount = 0;
+	this->manConfirmedCounter = 0;
+	this->masCounterForRoi= new int[myRoiChoosen->getAmountRoi()];
+	for ( int i = 0; i < myRoiChoosen->getAmountRoi(); i++ ) {
+		this->masCounterForRoi[i] = 0;
+	}
 	this->distanceDriftX = 20;
 	this->distanceDriftY = 20;
 	this->numberOfFramesTheObjectOfConservation = 6;
@@ -52,6 +58,7 @@ void FramePersons::checkObjForTrack (std::vector<cv::Rect> detect, cv::Mat Frame
 	}
 	for (int i = 0; i < this->manOnFrame.size(); i++) {
 		if ( this->manOnFrame[i].howManyLose() > this->numberOfFramesTheObjectOfConservation && this->manOnFrame[i].isReal()) {
+			this->fillCounters(i);
 			this->manOnFrame[i].deleteMan(filesDir);
 		}
 	}
@@ -115,4 +122,31 @@ int FramePersons::trackCount (int i) {
 
 cv::Point FramePersons::getTrackPointofMan (int i,int j) {
 	return this->manOnFrame[i].getTrackPoint(j);
+}
+
+void FramePersons::fillCounters(int numberMan) {
+	this->manConfirmedCounter ++;
+	cv::Point rackPoint;
+	bool* masCheckedRoi = new bool [this->myRoiObj->getAmountRoi()];
+	for ( int i = 0; i < this->myRoiObj->getAmountRoi(); i++ ) {
+		masCheckedRoi[i] = false;
+	}
+	for ( int i = 0; i < this->manOnFrame[numberMan].getCountofWay(); i ++ ) {
+		rackPoint = manOnFrame[numberMan].getTrackPoint(i);
+		for ( int j = 0; j < this->myRoiObj->getAmountRoi(); j ++ ) {
+			this->myRoiObj->setRoi(j);
+			int* nextMas = this->myRoiObj->getCurrentRoiCoord();
+			if ( rackPoint.x >= nextMas[0] && rackPoint.x <= nextMas[2] ) {
+				if ( rackPoint.y >= nextMas[1] && rackPoint.y <= nextMas[3] ) {
+					masCheckedRoi[j] = true;
+				}
+			}
+		}
+	}
+	for ( int i = 0; i < this->myRoiObj->getAmountRoi(); i++ ) {
+		if ( masCheckedRoi[i] ) {
+			masCounterForRoi[i] += 1;
+			System::Windows::Forms::MessageBox::Show("В ROI#" + (i+1) + " заходил человек!");
+		}
+	}
 }
