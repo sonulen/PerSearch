@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "Person.h"
 #include <fstream>
 #include <math.h>
 #include "Man.h"

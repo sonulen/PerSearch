@@ -150,3 +150,11 @@ void FramePersons::fillCounters(int numberMan) {
 		}
 	}
 }
+
+int FramePersons::getManConfirmedCounter () {
+	return this->manConfirmedCounter;
+}
+
+int* FramePersons::getRoiManConfirmedCounter () {
+	return this->masCounterForRoi;
+}

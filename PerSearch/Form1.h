@@ -24,11 +24,16 @@ int coefficientWidth; // Во сколько раз сжали изображение по ширине
 int coefficientHeight; // Во сколько раз сжали изображение по высоте
 std::vector <int> detectResultsOnFrames; // результаты детектора на всех кадрах
 std::vector <int> myPersonsResultsOnFrames; // результаты класса FramePersons на всех кадрах
-std::vector <int> resultForRoiOne;
-std::vector <int> resultForRoiTwo;
-std::vector <int> resultForRoiThree;
-std::vector <int> resultForRoiFour;
-std::vector <int> resultForRoiFive;
+std::vector <int> resultForRoiOne; // Массив для хранения кол-ва прошедших людей через ROI1 на каждом кадре
+std::vector <int> resultForRoiTwo; // Массив для хранения кол-ва прошедших людей через ROI2 на каждом кадре
+std::vector <int> resultForRoiThree; // Массив для хранения кол-ва прошедших людей через ROI3 на каждом кадре
+std::vector <int> resultForRoiFour; // Массив для хранения кол-ва прошедших людей через ROI4 на каждом кадре
+std::vector <int> resultForRoiFive; // Массив для хранения кол-ва прошедших людей через ROI5 на каждом кадре
+// Переменна для хранения всего кол-ва прошедших подтвержденных людей
+int manConfirmedCounter;
+// Переменные для хранения кол-ва подтвержденных людей через ROI
+int* masManConfirmedCounterForRoi;
+//
 
 namespace PerSearch {
 
@@ -1192,6 +1197,11 @@ namespace PerSearch {
 				 cvDestroyAllWindows();
 				 fout.close();
 				 checkout.close();
+
+				 // Запишем полученные значения counterов
+				 manConfirmedCounter = checkPersons.getManConfirmedCounter();
+				 masManConfirmedCounterForRoi = checkPersons.getRoiManConfirmedCounter();
+				 
 		 }
 };// Окончание
 }

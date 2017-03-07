@@ -14,7 +14,7 @@ private:
 	int currentCount;
 	// Вектор проверки на текущем кадре пешехода
 	std::vector <bool> checkPerson; 
-	// Проверка на вложенные в друг друга прямоугольник. удалять будем больший
+	// Проверка на вложенные в друг друга прямоугольники. удалять будем больший
 	void removeNestedRect ();
 	// Проверка на ложные и удаление если есть таковые
 	void removeUnrealPerson (); 
@@ -51,4 +51,8 @@ public:
 	int trackCount (int);
 	// Берет точку из Man объекта и возвращает в общий поток
 	cv::Point getTrackPointofMan (int,int);
+	// Вернем кол-во подтвержденных людей за все видео
+	int getManConfirmedCounter ();
+	// Вернем ссылку на массив с кол-вами подтвержденных людей прошедших через ROI за весь период
+	int* getRoiManConfirmedCounter ();
 };
