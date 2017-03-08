@@ -105,6 +105,21 @@ namespace PerSearch {
 	private: System::Windows::Forms::Label^  label10;
 	private: System::Windows::Forms::Label^  label11;
 	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::Button^  button9;
+	private: System::Windows::Forms::Button^  button8;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::Button^  button16;
+	private: System::Windows::Forms::Button^  button15;
+	private: System::Windows::Forms::Button^  button14;
+	private: System::Windows::Forms::Button^  button13;
+	private: System::Windows::Forms::Button^  button12;
+	private: System::Windows::Forms::Button^  button11;
+	private: System::Windows::Forms::Button^  button10;
+	private: System::Windows::Forms::Label^  label14;
+	private: System::Windows::Forms::TextBox^  textBox7;
+	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chart1;
+	private: System::Windows::Forms::TextBox^  textBox8;
+	private: System::Windows::Forms::Button^  button17;
 
 	private:
 		/// <summary>
@@ -120,8 +135,26 @@ namespace PerSearch {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->button14 = (gcnew System::Windows::Forms::Button());
+			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -157,6 +190,7 @@ namespace PerSearch {
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -173,6 +207,21 @@ namespace PerSearch {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->button17);
+			this->tabPage1->Controls->Add(this->textBox8);
+			this->tabPage1->Controls->Add(this->label14);
+			this->tabPage1->Controls->Add(this->textBox7);
+			this->tabPage1->Controls->Add(this->chart1);
+			this->tabPage1->Controls->Add(this->label13);
+			this->tabPage1->Controls->Add(this->button16);
+			this->tabPage1->Controls->Add(this->button15);
+			this->tabPage1->Controls->Add(this->button14);
+			this->tabPage1->Controls->Add(this->button13);
+			this->tabPage1->Controls->Add(this->button12);
+			this->tabPage1->Controls->Add(this->button11);
+			this->tabPage1->Controls->Add(this->button10);
+			this->tabPage1->Controls->Add(this->button9);
+			this->tabPage1->Controls->Add(this->button8);
 			this->tabPage1->Controls->Add(this->label12);
 			this->tabPage1->Controls->Add(this->label11);
 			this->tabPage1->Controls->Add(this->label10);
@@ -207,6 +256,182 @@ namespace PerSearch {
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"HOG + SVM";
 			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// button17
+			// 
+			this->button17->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"button17.Image")));
+			this->button17->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->button17->Location = System::Drawing::Point(273, 404);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(208, 35);
+			this->button17->TabIndex = 44;
+			this->button17->Text = L"      Перезапустить приложение";
+			this->button17->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Visible = false;
+			this->button17->Click += gcnew System::EventHandler(this, &Form1::button17_Click);
+			// 
+			// textBox8
+			// 
+			this->textBox8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
+				| System::Windows::Forms::AnchorStyles::Left) 
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->textBox8->Location = System::Drawing::Point(592, 33);
+			this->textBox8->Multiline = true;
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox8->Size = System::Drawing::Size(590, 399);
+			this->textBox8->TabIndex = 43;
+			this->textBox8->Visible = false;
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Location = System::Drawing::Point(589, 17);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(41, 13);
+			this->label14->TabIndex = 42;
+			this->label14->Text = L"label14";
+			this->label14->Visible = false;
+			// 
+			// textBox7
+			// 
+			this->textBox7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
+				| System::Windows::Forms::AnchorStyles::Left) 
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->textBox7->Location = System::Drawing::Point(592, 254);
+			this->textBox7->Multiline = true;
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->textBox7->Size = System::Drawing::Size(590, 178);
+			this->textBox7->TabIndex = 41;
+			this->textBox7->Visible = false;
+			// 
+			// chart1
+			// 
+			chartArea1->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea1);
+			legend1->Name = L"Legend1";
+			this->chart1->Legends->Add(legend1);
+			this->chart1->Location = System::Drawing::Point(592, 33);
+			this->chart1->Name = L"chart1";
+			series1->ChartArea = L"ChartArea1";
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			this->chart1->Series->Add(series1);
+			this->chart1->Size = System::Drawing::Size(593, 215);
+			this->chart1->TabIndex = 40;
+			this->chart1->Text = L"chart1";
+			this->chart1->Visible = false;
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(586, 91);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(134, 13);
+			this->label13->TabIndex = 39;
+			this->label13->Text = L"Полученные результаты:";
+			this->label13->Visible = false;
+			// 
+			// button16
+			// 
+			this->button16->Location = System::Drawing::Point(592, 438);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(75, 23);
+			this->button16->TabIndex = 38;
+			this->button16->Text = L"Назад";
+			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Visible = false;
+			this->button16->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
+			// 
+			// button15
+			// 
+			this->button15->Location = System::Drawing::Point(589, 212);
+			this->button15->Name = L"button15";
+			this->button15->Size = System::Drawing::Size(236, 38);
+			this->button15->TabIndex = 37;
+			this->button15->Text = L"Показать файл с найденными объектами и траекториями";
+			this->button15->UseVisualStyleBackColor = true;
+			this->button15->Visible = false;
+			this->button15->Click += gcnew System::EventHandler(this, &Form1::button15_Click);
+			// 
+			// button14
+			// 
+			this->button14->Location = System::Drawing::Point(889, 276);
+			this->button14->Name = L"button14";
+			this->button14->Size = System::Drawing::Size(214, 23);
+			this->button14->TabIndex = 36;
+			this->button14->Text = L"Показать результаты захода в ROI 4";
+			this->button14->UseVisualStyleBackColor = true;
+			this->button14->Visible = false;
+			this->button14->Click += gcnew System::EventHandler(this, &Form1::button14_Click);
+			// 
+			// button13
+			// 
+			this->button13->Location = System::Drawing::Point(889, 240);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(214, 23);
+			this->button13->TabIndex = 35;
+			this->button13->Text = L"Показать результаты захода в ROI 4";
+			this->button13->UseVisualStyleBackColor = true;
+			this->button13->Visible = false;
+			this->button13->Click += gcnew System::EventHandler(this, &Form1::button13_Click);
+			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(889, 203);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(214, 23);
+			this->button12->TabIndex = 34;
+			this->button12->Text = L"Показать результаты захода в ROI 3";
+			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Visible = false;
+			this->button12->Click += gcnew System::EventHandler(this, &Form1::button12_Click);
+			// 
+			// button11
+			// 
+			this->button11->Location = System::Drawing::Point(889, 166);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(214, 23);
+			this->button11->TabIndex = 33;
+			this->button11->Text = L"Показать результаты захода в ROI 2";
+			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Visible = false;
+			this->button11->Click += gcnew System::EventHandler(this, &Form1::button11_Click);
+			// 
+			// button10
+			// 
+			this->button10->Location = System::Drawing::Point(889, 131);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(214, 23);
+			this->button10->TabIndex = 32;
+			this->button10->Text = L"Показать результаты захода в ROI 1";
+			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Visible = false;
+			this->button10->Click += gcnew System::EventHandler(this, &Form1::button10_Click);
+			// 
+			// button9
+			// 
+			this->button9->Location = System::Drawing::Point(589, 173);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(278, 23);
+			this->button9->TabIndex = 31;
+			this->button9->Text = L"Показать результат работы класса FramePersons";
+			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Visible = false;
+			this->button9->Click += gcnew System::EventHandler(this, &Form1::button9_Click);
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(589, 133);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(228, 23);
+			this->button8->TabIndex = 30;
+			this->button8->Text = L"Показать результат работы детектора";
+			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Visible = false;
+			this->button8->Click += gcnew System::EventHandler(this, &Form1::button8_Click);
 			// 
 			// label12
 			// 
@@ -570,6 +795,7 @@ namespace PerSearch {
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->EndInit();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
@@ -609,6 +835,8 @@ namespace PerSearch {
 							// Элементы "Выберите файл" необходимо скрыть
 							label1->Visible = false;
 							button1->Visible = false;
+							// Рестарт кнопка
+							button17->Visible = true;
 
 							delete (myString);
 						}
@@ -975,7 +1203,7 @@ namespace PerSearch {
 				 button6->Visible = true;
 			 }
 		 }
-		 // Обработка нажатия кнопки "Начать анализ"
+	// Обработка нажатия кнопки "Начать анализ"
 	private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
 				 cv::VideoCapture video;// переменная для хранения потока видео
 				 video.open(loadFileName); // поток видео
@@ -1022,21 +1250,6 @@ namespace PerSearch {
 				 checkout << "Height frame: " << resizeHeight << "\n";
 				 // Инициализируем свой класс для отслеживания и трекирования
 				 FramePersons checkPersons (myCurrentRoi);
-				 //
-				 // Для проходов через ROI на всех кадраx
-				 if ( myCurrentRoi->getAmountRoi() > 1 ) {
-					 std::vector <int> resultForRoiOne;
-					 std::vector <int> resultForRoiTwo;
-				 }
-				 if ( myCurrentRoi->getAmountRoi() > 2 ) {
-					 std::vector <int> resultForRoiThree;
-				 }
-				 if ( myCurrentRoi->getAmountRoi() > 3 ) {
-					 std::vector <int> resultForRoiFour;
-				 }
-				 if ( myCurrentRoi->getAmountRoi() > 4 ) {
-					 std::vector <int> resultForRoiFive;
-				 }
 				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
 					 video >> imag; // считываем кадр	
@@ -1201,7 +1414,267 @@ namespace PerSearch {
 				 // Запишем полученные значения counterов
 				 manConfirmedCounter = checkPersons.getManConfirmedCounter();
 				 masManConfirmedCounterForRoi = checkPersons.getRoiManConfirmedCounter();
-				 
+				 resultInterfaceVisibleTrue();
+		 }
+	// Показать интерфейс результатов
+	private: System::Void resultInterfaceVisibleTrue () {
+				 label13->Visible = true;
+				 button8->Visible = true;
+				 button9->Visible = true;
+				 button15->Visible = true;
+				 if ( myCurrentRoi->getAmountRoi() > 0 ) {
+					 button10->Visible = true;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 1 ) {
+					 button11->Visible = true;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 2 ) {
+					 button12->Visible = true;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 3 ) {
+					 button13->Visible = true;
+				 }
+				 if ( myCurrentRoi->getAmountRoi() > 4 ) {
+					 button14->Visible = true;
+				 }
+
+				 chart1->Visible = false;
+				 textBox7->Visible = false;
+				 label14->Visible = false;
+				 button16->Visible = false;
+				 textBox8->Visible = false;
+			 }
+	// Скрыть интерфейс результатов
+	private: System::Void resultInterfaceVisibleFalse () {
+				 label13->Visible = false;
+				 button8->Visible = false;
+				 button9->Visible = false;
+				 button15->Visible = false;
+				 button10->Visible = false;
+				 button11->Visible = false;
+				 button12->Visible = false;
+				 button13->Visible = false;
+				 button14->Visible = false;
+				 button16->Visible = true;
+			 }			 
+	// Отобразить результаты работы детектора на всех кадрах
+	private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
+				 //
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты работы детектора";
+				 //
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Detectors_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей найденных детектором на каждом кадре");
+				 chart1->Series["Количество людей найденных детектором на каждом кадре"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<detectResultsOnFrames.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей найденных детектором на каждом кадре"]->Points->AddXY(i,detectResultsOnFrames[i]);
+				 }	
+
+			 }
+	// Кнопка Назад
+	private: System::Void button16_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleTrue();
+			 }
+	// Отобразить результаты работы класса FramePersons
+	private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты работы класса FramePersons. Всего засчитанно подтвержденных объектов: " + manConfirmedCounter;
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Persons_Search_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей найденных классом FramePersons на каждом кадре");
+				 chart1->Series["Количество людей найденных классом FramePersons на каждом кадре"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<myPersonsResultsOnFrames.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей найденных классом FramePersons на каждом кадре"]->Points->AddXY(i,myPersonsResultsOnFrames[i]);
+ 				 }
+			 }
+	// Отобразить файл с треками
+	private: System::Void button15_Click(System::Object^  sender, System::EventArgs^  e) {
+				label14->Visible = true;
+				label14->Text = "Найденные объекты и их траектории движения. Всего засчитанно подтвержденных объектов: " + manConfirmedCounter;
+				resultInterfaceVisibleFalse();
+				textBox8->Visible = true;
+				try 
+				{
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Mans.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox8->Text = MyReader->ReadToEnd();
+					MyReader->Close();
+				} 
+				catch (int inspect ) 
+				{ 
+					textBox8->Text = "Ошибка при считывании файла";
+				}
+				catch( System::IO::FileNotFoundException^){
+					textBox8->Text = "Файл не был создан. Ни одного подтвержденного объекта найденно не было.";
+				}
+			 }
+	// Отобразить результаты захода в ROI 1 
+	private: System::Void button10_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты захода объектов в ROI#1. Подтвержденных объектов: " + masManConfirmedCounterForRoi[0];
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\ROI1_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей прошедших через ROI#1");
+				 chart1->Series["Количество людей прошедших через ROI#1"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<resultForRoiOne.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей прошедших через ROI#1"]->Points->AddXY(i,resultForRoiOne[i]);
+ 				 }
+			 }
+	// Отобразить результаты захода в ROI 2
+	private: System::Void button11_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты захода объектов в ROI#2. Подтвержденных объектов: " + masManConfirmedCounterForRoi[1];
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\ROI2_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей прошедших через ROI#2");
+				 chart1->Series["Количество людей прошедших через ROI#2"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<resultForRoiTwo.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей прошедших через ROI#2"]->Points->AddXY(i,resultForRoiTwo[i]);
+ 				 }
+			 }
+	// Отобразить результаты захода в ROI 3
+	private: System::Void button12_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты захода объектов в ROI#3. Подтвержденных объектов: " + masManConfirmedCounterForRoi[2];
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\ROI3_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей прошедших через ROI#3");
+				 chart1->Series["Количество людей прошедших через ROI#3"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<resultForRoiThree.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей прошедших через ROI#3"]->Points->AddXY(i,resultForRoiThree[i]);
+ 				 }
+			 }
+	// Отобразить результаты захода в ROI 4
+	private: System::Void button13_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты захода объектов в ROI#4. Подтвержденных объектов: " + masManConfirmedCounterForRoi[3];
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\ROI4_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей прошедших через ROI#4");
+				 chart1->Series["Количество людей прошедших через ROI#4"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<resultForRoiFour.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей прошедших через ROI#4"]->Points->AddXY(i,resultForRoiFour[i]);
+ 				 }
+			 }
+	// Отобразить результаты захода в ROI 5
+	private: System::Void button14_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Результаты захода объектов в ROI#5. Подтвержденных объектов: " + masManConfirmedCounterForRoi[4];
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\ROI5_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Количество людей прошедших через ROI#5");
+				 chart1->Series["Количество людей прошедших через ROI#5"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<resultForRoiFive.size(); i++)
+				 {
+					 this->chart1->Series["Количество людей прошедших через ROI#5"]->Points->AddXY(i,resultForRoiFive[i]);
+ 				 }
+			 }
+private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Application::Restart();
 		 }
 };// Окончание
 }

@@ -101,7 +101,7 @@ void Man::deleteMan (std::string filesDir) {
 		// Нарисуем прямоугольник вокруг объекта
 		cv::rectangle(this->currentFrame, this->manWay.back().tl(), this->manWay.back().br(), cv::Scalar(0,0,205), 3); 
 		fout << "Кол-во потерянных кадров: " << this->loseFocusOnMan << "\n";
-		fout << "Кол-во найденных в начале бля кадров: " << this->onFindFrameCount << "\n";
+		fout << "Кол-во кадров для подтверждения: " << this->onFindFrameCount << "\n";
 		fout << "------------------------------------------------------------" << "\n";
 		fout.close();
 		// Сохранение изображения

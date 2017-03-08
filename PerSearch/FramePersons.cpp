@@ -146,7 +146,6 @@ void FramePersons::fillCounters(int numberMan) {
 	for ( int i = 0; i < this->myRoiObj->getAmountRoi(); i++ ) {
 		if ( masCheckedRoi[i] ) {
 			masCounterForRoi[i] += 1;
-			System::Windows::Forms::MessageBox::Show("В ROI#" + (i+1) + " заходил человек!");
 		}
 	}
 }
