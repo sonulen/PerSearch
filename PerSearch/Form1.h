@@ -33,7 +33,45 @@ std::vector <int> resultForRoiFive; // Массив для хранения кол-ва прошедших люде
 int manConfirmedCounter;
 // Переменные для хранения кол-ва подтвержденных людей через ROI
 int* masManConfirmedCounterForRoi;
-//
+// Переменная для выбора точности детектора
+int accuracy;
+// Функция обработки трэкбара
+void myTrackbarAccuracy(int pos) {
+	if ( pos == 0 ) accuracy = 4;
+	if ( pos == 1 ) accuracy = 6;
+	if ( pos == 2 ) accuracy = 8;
+	if ( pos == 3 ) accuracy = 12;
+	if ( pos == 4 ) accuracy = 16;
+	if ( pos == 5 ) accuracy = 24;
+	if ( pos == 6 ) accuracy = 32;
+	//System::Windows::Forms::MessageBox::Show("Точность" + accuracy);
+}
+// Переменная для выбора размера ядра сглаживания
+int kernelSize;
+// Переменная для выбора отступов от ядра сглаживания
+int deviationSize;
+// Минимальное значение threshold
+int minTrashValue;
+// Максимальное значение threshold
+int maxTrashValue;
+// Функция для обработки выбора размера ядра сглаживания
+void myTrackbarkernelSize(int pos) {
+	if ( !(pos % 2) ) pos--;
+	kernelSize = pos;
+}
+// Функция для обработки выбора отступов от ядра сглаживания
+void myTrackbardeviationSize(int pos) {
+	deviationSize = pos;
+}
+// Функция для обработки Минимального значения threshold
+void myTrackbarminTrashValue(int pos) {
+	minTrashValue = pos;
+}
+// Функция для обработки Максимального значения threshold
+void myTrackbarmaxTrashValue(int pos) {
+	maxTrashValue = pos;
+}
+
 
 namespace PerSearch {
 
@@ -1215,6 +1253,27 @@ namespace PerSearch {
 				 cv::namedWindow("Background", CV_WINDOW_AUTOSIZE);
 				 cv::namedWindow("Updated scene", CV_WINDOW_AUTOSIZE);
 				 cv::namedWindow("MyCheckWindow", CV_WINDOW_AUTOSIZE);
+				 // TrackBar
+				 // Точность детектора
+				 cvCreateTrackbar("Accuracy", "Updated scene", &accuracy, 6, myTrackbarAccuracy);
+				 cvSetTrackbarPos("Accuracy", "Updated scene", 2);
+				 accuracy = 8;
+				 // Размер ядра для сглаживания
+				 cvCreateTrackbar("Kernel", "Background", &kernelSize, 101, myTrackbarkernelSize);
+				 cvSetTrackbarPos("Kernel", "Background", 41);
+				 kernelSize = 41;
+				 // Отступ от ядра для сглаживания
+				 cvCreateTrackbar("Deviation", "Background", &deviationSize, 20, myTrackbardeviationSize);
+				 cvSetTrackbarPos("Deviation", "Background", 10);
+				 deviationSize = 10;
+				 // Мин порог threshold
+				 cvCreateTrackbar("Minthresh", "Background", &minTrashValue, 255, myTrackbarminTrashValue);
+				 cvSetTrackbarPos("Minthresh", "Background", 10);
+				 minTrashValue = 10;
+				 // Макс порог threshold
+				 cvCreateTrackbar("Maxthresh", "Background", &maxTrashValue, 255, myTrackbarmaxTrashValue);
+				 cvSetTrackbarPos("Maxthresh", "Background", 255);
+				 maxTrashValue = 255;
 				 // Кисти
 				 int fontFace = CV_FONT_HERSHEY_COMPLEX_SMALL; //стиль фонта
 				 double fontScale = 2; //2
@@ -1262,16 +1321,21 @@ namespace PerSearch {
 					 if ( resolutionForResize ) cv::resize(imag,imag,cv::Size(resizeWidth,resizeHeight),0,0,1);
 					 //
 					 // background
+					 //cv::imwrite (filesDir+"\\image.jpg", imag);
 					 foregroundImg = cv::Scalar::all(0);
 					 pMOG->operator()(imag, fgMaskMOG, 0.005);
-					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(41,41), 10,10);
-					 cv::threshold(fgMaskMOG, fgMaskMOG, 10, 255 ,cv::THRESH_BINARY);
+					 //cv::imwrite (filesDir+"\\fgMaskMog.jpg", fgMaskMOG);
+					 cv::GaussianBlur(fgMaskMOG, fgMaskMOG, cv::Size(kernelSize,kernelSize), deviationSize,deviationSize);
+					 //cv::imwrite (filesDir+"\\fgMaskMog and Gaussian.jpg", fgMaskMOG);
+					 cv::threshold(fgMaskMOG, fgMaskMOG, minTrashValue, maxTrashValue ,cv::THRESH_BINARY);
+					 //cv::imwrite (filesDir+"\\fgMaskMog and Gaussian and threshold.jpg", fgMaskMOG);
 					 foregroundImg = cv::Scalar::all(0);				 
 					 cv::filter2D(fgMaskMOG, fgMaskMOG, -1, kernel, cvPoint(-1,-1), 0, cv::BORDER_DEFAULT);
 					 imag.copyTo(foregroundImg, fgMaskMOG);
+					 //cv::imwrite (filesDir+"\\foreground.jpg", foregroundImg);
 					 // HOG 
 					 std::vector<cv::Rect> detect, detect_filter; // массивы для хранения найденных
-					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(8,8), cv::Size(16,16), 1.05, 2); // мультискейл поиск было 8 8 32 32
+					 HGDES.detectMultiScale(foregroundImg, detect, 0, cv::Size(accuracy,accuracy), cv::Size(16,16), 1.05, 2); // мультискейл поиск было 8 8 32 32
 					 // Добавить результат в ROI 
 					 if ( myCurrentRoi->getAmountRoi() > 0 ) resultForRoiOne.push_back(0);
 					 if ( myCurrentRoi->getAmountRoi() > 1 ) resultForRoiTwo.push_back(0);
@@ -1292,7 +1356,7 @@ namespace PerSearch {
 						if (j== detect.size())
 							detect_filter.push_back(r); // добавляем в конец
 					 }
-					 
+					 //
 					 if ( detect.size() != detect_filter.size() ) fout << "				-----rejected------" << "\n";
 					 fout << "Object's on frame in detect_filter:	" << detect_filter.size() << "\n";
 					 // Скопируем текущий обработанный кадр
@@ -1316,6 +1380,8 @@ namespace PerSearch {
 						
 							cv::circle(foregroundImg,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),5,CV_RGB(205,0,0),-1,8,00); // точка центра в найденном объекте
 					 }
+					 // Для презентации сохраним изобр. обработанное
+					// cv::imwrite (filesDir+"\\foregroundImg_After_detect.jpg", foregroundImg);
 					 // Запись результатов детектора в вектор итоговый на каждом кадре
 					 detectResultsOnFrames.push_back(detect_filter.size());
 					 // MOE
@@ -1354,6 +1420,28 @@ namespace PerSearch {
 							 cv::circle(myCheckImage,checkPersons.getTrackPointofMan(i,j),5,CV_RGB(0,0,205),-1,8,00);
 						 }
 					 }
+					 // Для презентации
+					 //cv::imwrite (filesDir+"\\myClassImage.jpg", myCheckImage);
+					 //// Для HOG дескриптора показать как работает
+					 //cv::Mat imgrad = cv::imread("C:\\Users\\Medivh\\Desktop\\image.jpg");
+					 //imgrad.convertTo(imgrad, CV_32F, 1/255.0);
+					 //cv::Mat gx, gy; 
+					 //cv::Mat mag, angle; 
+					 //Sobel(imgrad, gx, CV_32F, 1, 0, 1);				 
+					 //Sobel(imgrad, gy, CV_32F, 0, 1, 1);
+					 //cv::imshow("Распознание пешеходов", gx);
+					 //cv::waitKey();
+					 //cv::imshow("Распознание пешеходов", gy);
+					 //cv::waitKey();
+					 //cv::cartToPolar(gx, gy, mag, angle, 1); 
+					 //cv::imshow("Распознание пешеходов", mag);
+					 //cv::waitKey();
+					 //cv::imshow("Распознание пешеходов", angle);
+					 //cv::waitKey();
+					 //cv::imwrite (filesDir+"\\gx.png", gx);
+					 //cv::imwrite (filesDir+"\\gy.png", gy);
+					 //cv::imwrite (filesDir+"\\imgrad.png", imgrad);
+					 //
 					 //
 					 myPersonsResultsOnFrames.push_back(checkPersons.getCountofPerson());
 					 // Отрисовать все ROI на кадре
@@ -1401,7 +1489,7 @@ namespace PerSearch {
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
 					 
-					 
+					 //if ( counter > 300 ) cv::waitKey();
 					 if (cv::waitKey(1)>=0){
 					 	break;
 						checkPersons.~FramePersons();

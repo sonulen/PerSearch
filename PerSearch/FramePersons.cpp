@@ -14,7 +14,7 @@ FramePersons::FramePersons(myRoi* myRoiChoosen) {
 	}
 	this->distanceDriftX = 20;
 	this->distanceDriftY = 20;
-	this->numberOfFramesTheObjectOfConservation = 6;
+	this->numberOfFramesTheObjectOfConservation = 12;
 	this->numberOfConfirmedFramesHuman = 3;
 }
 

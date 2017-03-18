@@ -1,0 +1,2079 @@
+Analyzed file:	D:\пешики\00022.MTS
+Width frame: 640
+Height frame: 480
+Frame №	0 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	1 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	2 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	3 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	4 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	5 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	6 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	7 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	8 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	9 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	10 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	11 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	12 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	13 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	14 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	15 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	16 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	17 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	18 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	19 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	20 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	21 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	22 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	23 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	24 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	25 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	26 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	27 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	28 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	29 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	30 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	31 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	32 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	33 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	34 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	35 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	36 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	37 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	38 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	39 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	40 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	41 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	42 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	43 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	44 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	45 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	46 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	47 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	48 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	49 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	50 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	51 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	52 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	53 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	54 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	55 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	56 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	57 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	58 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	59 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	60 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	61 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	62 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	63 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	64 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	65 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	66 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	67 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	68 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	69 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [122 x 244 from (525, 29)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [122 x 244 from (525, 29)]
+Frame №	70 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Frame №	71 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Frame №	72 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [124 x 248 from (523, 27)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [124 x 248 from (523, 27)]
+Frame №	73 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [123 x 247 from (524, 27)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [123 x 247 from (524, 27)]
+Frame №	74 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [118 x 236 from (529, 36)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [118 x 236 from (529, 36)]
+Frame №	75 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Frame №	76 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	77 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	78 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	79 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	80 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	81 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	82 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	83 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	84 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	85 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	86 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	87 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	88 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	89 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	90 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	91 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	92 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	93 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	94 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	95 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [121 x 242 from (527, 29)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [121 x 242 from (527, 29)]
+Frame №	96 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [119 x 238 from (528, 36)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [119 x 238 from (528, 36)]
+Frame №	97 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [125 x 251 from (522, 23)]
+Frame №	98 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [129 x 257 from (522, 21)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [129 x 257 from (522, 21)]
+Frame №	99 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
+Frame №	100 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Frame №	101 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Frame №	102 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (517, 12)]
++Object's №: 1
+ Coordinate: [112 x 223 from (504, -23)]
+Frame №	103 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [129 x 258 from (521, 20)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [129 x 258 from (521, 20)]
+Frame №	104 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [112 x 224 from (506, -14)]
++Object's №: 1
+ Coordinate: [132 x 264 from (519, 19)]
++Object's №: 2
+ Coordinate: [75 x 151 from (254, -9)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [112 x 224 from (506, -14)]
++Object's №: 1
+ Coordinate: [132 x 264 from (519, 19)]
++Object's №: 2
+ Coordinate: [75 x 151 from (254, -9)]
+Frame №	105 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [117 x 234 from (510, -2)]
++Object's №: 1
+ Coordinate: [74 x 148 from (254, -9)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [117 x 234 from (510, -2)]
++Object's №: 1
+ Coordinate: [74 x 148 from (254, -9)]
+Frame №	106 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [128 x 254 from (524, 30)]
++Object's №: 1
+ Coordinate: [106 x 212 from (509, -13)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [128 x 254 from (524, 30)]
++Object's №: 1
+ Coordinate: [106 x 212 from (509, -13)]
+Frame №	107 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	108 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [125 x 250 from (524, 25)]
++Object's №: 1
+ Coordinate: [111 x 223 from (504, -19)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [125 x 250 from (524, 25)]
++Object's №: 1
+ Coordinate: [111 x 223 from (504, -19)]
+Frame №	109 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	110 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	111 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	112 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	113 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	114 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	115 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	116 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	117 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	118 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	119 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	120 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	121 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	122 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	123 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	124 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	125 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	126 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	127 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	128 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	129 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	130 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	131 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	132 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	133 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	134 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	135 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	136 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	137 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	138 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	139 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	140 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	141 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	142 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	143 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	144 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	145 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	146 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	147 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	148 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	149 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	150 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	151 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	152 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	153 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	154 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	155 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	156 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	157 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	158 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	159 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	160 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	161 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	162 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	163 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	164 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	165 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	166 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	167 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	168 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	169 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	170 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	171 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	172 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	173 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	174 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	175 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	176 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	177 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	178 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	179 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	180 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	181 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	182 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	183 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	184 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	185 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	186 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	187 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	188 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	189 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	190 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	191 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	192 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	193 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	194 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	195 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	196 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	197 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	198 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	199 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	200 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	201 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	202 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	203 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	204 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	205 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	206 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	207 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	208 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	209 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	210 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	211 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	212 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	213 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	214 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	215 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	216 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	217 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	218 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	219 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	220 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	221 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	222 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	223 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	224 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	225 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	226 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	227 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	228 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	229 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	230 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	231 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	232 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	233 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	234 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	235 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	236 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	237 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	238 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	239 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	240 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	241 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	242 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	243 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	244 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	245 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	246 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	247 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	248 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	249 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	250 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	251 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	252 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	253 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	254 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	255 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	256 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	257 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	258 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	259 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	260 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	261 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	262 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	263 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	264 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (558, 184)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (558, 184)]
+Frame №	265 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [99 x 199 from (562, 186)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [99 x 199 from (562, 186)]
+Frame №	266 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [91 x 181 from (567, 197)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [91 x 181 from (567, 197)]
+Frame №	267 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [96 x 191 from (564, 189)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [96 x 191 from (564, 189)]
+Frame №	268 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (557, 173)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (557, 173)]
+Frame №	269 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [102 x 204 from (556, 177)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [102 x 204 from (556, 177)]
+Frame №	270 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (553, 171)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (553, 171)]
+Frame №	271 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [103 x 206 from (551, 170)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [103 x 206 from (551, 170)]
+Frame №	272 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 208 from (549, 164)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 208 from (549, 164)]
+Frame №	273 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [101 x 201 from (550, 166)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [101 x 201 from (550, 166)]
+Frame №	274 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [98 x 197 from (548, 164)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [98 x 197 from (548, 164)]
+Frame №	275 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	276 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	277 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [89 x 177 from (549, 162)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [89 x 177 from (549, 162)]
+Frame №	278 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [97 x 194 from (541, 152)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [97 x 194 from (541, 152)]
+Frame №	279 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (541, 147)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (541, 147)]
+Frame №	280 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [102 x 204 from (540, 146)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [102 x 204 from (540, 146)]
+Frame №	281 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (539, 144)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (539, 144)]
+Frame №	282 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (535, 135)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (535, 135)]
+Frame №	283 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [107 x 213 from (534, 129)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [107 x 213 from (534, 129)]
+Frame №	284 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [114 x 228 from (518, 110)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [114 x 228 from (518, 110)]
+Frame №	285 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [122 x 243 from (514, 91)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [122 x 243 from (514, 91)]
+Frame №	286 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [113 x 226 from (517, 102)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [113 x 226 from (517, 102)]
+Frame №	287 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [105 x 210 from (520, 113)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [105 x 210 from (520, 113)]
+Frame №	288 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 208 from (521, 110)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 208 from (521, 110)]
+Frame №	289 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [92 x 184 from (526, 123)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [92 x 184 from (526, 123)]
+Frame №	290 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	291 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	292 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [95 x 189 from (520, 118)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [95 x 189 from (520, 118)]
+Frame №	293 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	294 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	295 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	296 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	297 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	298 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	299 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [95 x 189 from (512, 106)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [95 x 189 from (512, 106)]
+Frame №	300 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [93 x 187 from (511, 108)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [93 x 187 from (511, 108)]
+Frame №	301 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	302 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [95 x 189 from (425, -20)]
++Object's №: 1
+ Coordinate: [84 x 168 from (155, -17)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [95 x 189 from (425, -20)]
++Object's №: 1
+ Coordinate: [84 x 168 from (155, -17)]
+Frame №	303 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [83 x 167 from (151, -15)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [83 x 167 from (151, -15)]
+Frame №	304 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [96 x 192 from (144, -24)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [96 x 192 from (144, -24)]
+Frame №	305 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [99 x 199 from (141, -25)]
++Object's №: 1
+ Coordinate: [95 x 189 from (425, -12)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [99 x 199 from (141, -25)]
++Object's №: 1
+ Coordinate: [95 x 189 from (425, -12)]
+Frame №	306 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (424, -12)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (424, -12)]
+Frame №	307 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [108 x 216 from (134, -23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [108 x 216 from (134, -23)]
+Frame №	308 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [103 x 206 from (134, -16)]
++Object's №: 1
+ Coordinate: [97 x 193 from (426, -7)]
++Object's №: 2
+ Coordinate: [100 x 201 from (505, 72)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [103 x 206 from (134, -16)]
++Object's №: 1
+ Coordinate: [97 x 193 from (426, -7)]
++Object's №: 2
+ Coordinate: [100 x 201 from (505, 72)]
+Frame №	309 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [100 x 201 from (138, -12)]
++Object's №: 1
+ Coordinate: [99 x 199 from (504, 74)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [100 x 201 from (138, -12)]
++Object's №: 1
+ Coordinate: [99 x 199 from (504, 74)]
+Frame №	310 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [102 x 205 from (138, -10)]
++Object's №: 1
+ Coordinate: [94 x 187 from (433, -1)]
++Object's №: 2
+ Coordinate: [99 x 199 from (504, 74)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [102 x 205 from (138, -10)]
++Object's №: 1
+ Coordinate: [94 x 187 from (433, -1)]
++Object's №: 2
+ Coordinate: [99 x 199 from (504, 74)]
+Frame №	311 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (138, -6)]
++Object's №: 1
+ Coordinate: [95 x 189 from (432, -3)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (138, -6)]
++Object's №: 1
+ Coordinate: [95 x 189 from (432, -3)]
+Frame №	312 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [110 x 220 from (495, 53)]
++Object's №: 1
+ Coordinate: [97 x 194 from (134, -5)]
++Object's №: 2
+ Coordinate: [93 x 186 from (434, 0)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [110 x 220 from (495, 53)]
++Object's №: 1
+ Coordinate: [97 x 194 from (134, -5)]
++Object's №: 2
+ Coordinate: [93 x 186 from (434, 0)]
+Frame №	313 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [104 x 208 from (495, 59)]
++Object's №: 1
+ Coordinate: [99 x 198 from (133, -6)]
++Object's №: 2
+ Coordinate: [86 x 172 from (450, 129)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [104 x 208 from (495, 59)]
++Object's №: 1
+ Coordinate: [99 x 198 from (133, -6)]
++Object's №: 2
+ Coordinate: [86 x 172 from (450, 129)]
+Frame №	314 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [105 x 209 from (494, 57)]
++Object's №: 1
+ Coordinate: [99 x 197 from (133, -4)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [105 x 209 from (494, 57)]
++Object's №: 1
+ Coordinate: [99 x 197 from (133, -4)]
+Frame №	315 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [106 x 211 from (493, 54)]
++Object's №: 1
+ Coordinate: [98 x 197 from (130, -3)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [106 x 211 from (493, 54)]
++Object's №: 1
+ Coordinate: [98 x 197 from (130, -3)]
+Frame №	316 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [105 x 209 from (495, 51)]
++Object's №: 1
+ Coordinate: [100 x 200 from (128, -2)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [105 x 209 from (495, 51)]
++Object's №: 1
+ Coordinate: [100 x 200 from (128, -2)]
+Frame №	317 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [105 x 210 from (495, 45)]
++Object's №: 1
+ Coordinate: [98 x 195 from (127, 3)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [105 x 210 from (495, 45)]
++Object's №: 1
+ Coordinate: [98 x 195 from (127, 3)]
+Frame №	318 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [107 x 214 from (120, 2)]
++Object's №: 1
+ Coordinate: [100 x 200 from (495, 50)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [107 x 214 from (120, 2)]
++Object's №: 1
+ Coordinate: [100 x 200 from (495, 50)]
+Frame №	319 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [107 x 215 from (118, 5)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [107 x 215 from (118, 5)]
+Frame №	320 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [110 x 219 from (114, 9)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [110 x 219 from (114, 9)]
+Frame №	321 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [115 x 230 from (426, 76)]
++Object's №: 1
+ Coordinate: [111 x 223 from (111, 9)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [115 x 230 from (426, 76)]
++Object's №: 1
+ Coordinate: [111 x 223 from (111, 9)]
+Frame №	322 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [113 x 226 from (424, 75)]
++Object's №: 1
+ Coordinate: [102 x 204 from (114, 19)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [113 x 226 from (424, 75)]
++Object's №: 1
+ Coordinate: [102 x 204 from (114, 19)]
+Frame №	323 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [102 x 205 from (112, 23)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [102 x 205 from (112, 23)]
+Frame №	324 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [107 x 214 from (106, 20)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [107 x 214 from (106, 20)]
+Frame №	325 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (110, 24)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (110, 24)]
+Frame №	326 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [124 x 247 from (426, 63)]
++Object's №: 1
+ Coordinate: [101 x 201 from (107, 27)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [124 x 247 from (426, 63)]
++Object's №: 1
+ Coordinate: [101 x 201 from (107, 27)]
+Frame №	327 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (106, 27)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [101 x 202 from (106, 27)]
+Frame №	328 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 199 from (105, 30)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 199 from (105, 30)]
+Frame №	329 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [101 x 203 from (108, 30)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [101 x 203 from (108, 30)]
+Frame №	330 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [103 x 206 from (106, 33)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [103 x 206 from (106, 33)]
+Frame №	331 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 200 from (107, 42)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 200 from (107, 42)]
+Frame №	332 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (422, 45)]
++Object's №: 1
+ Coordinate: [101 x 202 from (106, 43)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [135 x 270 from (422, 45)]
++Object's №: 1
+ Coordinate: [101 x 202 from (106, 43)]
+Frame №	333 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [75 x 151 from (442, 138)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [75 x 151 from (442, 138)]
+Frame №	334 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [113 x 226 from (94, 47)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [113 x 226 from (94, 47)]
+Frame №	335 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [80 x 159 from (440, 127)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [80 x 159 from (440, 127)]
+Frame №	336 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [111 x 223 from (88, 51)]
++Object's №: 1
+ Coordinate: [84 x 167 from (194, 324)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [111 x 223 from (88, 51)]
++Object's №: 1
+ Coordinate: [84 x 167 from (194, 324)]
+Frame №	337 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [90 x 180 from (191, 315)]
++Object's №: 1
+ Coordinate: [108 x 216 from (94, 58)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [90 x 180 from (191, 315)]
++Object's №: 1
+ Coordinate: [108 x 216 from (94, 58)]
+Frame №	338 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [112 x 224 from (84, 56)]
++Object's №: 1
+ Coordinate: [78 x 156 from (439, 128)]
++Object's №: 2
+ Coordinate: [85 x 169 from (196, 323)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [112 x 224 from (84, 56)]
++Object's №: 1
+ Coordinate: [78 x 156 from (439, 128)]
++Object's №: 2
+ Coordinate: [85 x 169 from (196, 323)]
+Frame №	339 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [112 x 224 from (84, 56)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [112 x 224 from (84, 56)]
+Frame №	340 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [109 x 219 from (86, 59)]
++Object's №: 1
+ Coordinate: [94 x 187 from (189, 306)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [109 x 219 from (86, 59)]
++Object's №: 1
+ Coordinate: [94 x 187 from (189, 306)]
+Frame №	341 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 269)]
++Object's №: 1
+ Coordinate: [94 x 187 from (98, 80)]
++Object's №: 2
+ Coordinate: [78 x 156 from (198, 324)]
+				-----rejected------
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 269)]
++Object's №: 1
+ Coordinate: [94 x 187 from (98, 80)]
+Frame №	342 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [92 x 185 from (189, 296)]
++Object's №: 1
+ Coordinate: [94 x 187 from (93, 73)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [92 x 185 from (189, 296)]
++Object's №: 1
+ Coordinate: [94 x 187 from (93, 73)]
+Frame №	343 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [109 x 217 from (181, 255)]
++Object's №: 1
+ Coordinate: [95 x 190 from (88, 76)]
++Object's №: 2
+ Coordinate: [80 x 160 from (196, 313)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [109 x 217 from (181, 255)]
++Object's №: 1
+ Coordinate: [95 x 190 from (88, 76)]
++Object's №: 2
+ Coordinate: [80 x 160 from (196, 313)]
+Frame №	344 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (86, 76)]
++Object's №: 1
+ Coordinate: [88 x 177 from (193, 290)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (86, 76)]
++Object's №: 1
+ Coordinate: [88 x 177 from (193, 290)]
+Frame №	345 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [101 x 202 from (468, 53)]
++Object's №: 1
+ Coordinate: [104 x 209 from (82, 82)]
++Object's №: 2
+ Coordinate: [104 x 209 from (182, 252)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [101 x 202 from (468, 53)]
++Object's №: 1
+ Coordinate: [104 x 209 from (82, 82)]
++Object's №: 2
+ Coordinate: [104 x 209 from (182, 252)]
+Frame №	346 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [109 x 219 from (77, 82)]
++Object's №: 1
+ Coordinate: [97 x 193 from (187, 253)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [109 x 219 from (77, 82)]
++Object's №: 1
+ Coordinate: [97 x 193 from (187, 253)]
+Frame №	347 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [92 x 183 from (190, 262)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [92 x 183 from (190, 262)]
+Frame №	348 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [91 x 182 from (191, 257)]
++Object's №: 1
+ Coordinate: [87 x 175 from (116, 283)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [91 x 182 from (191, 257)]
++Object's №: 1
+ Coordinate: [87 x 175 from (116, 283)]
+Frame №	349 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [104 x 209 from (73, 100)]
++Object's №: 1
+ Coordinate: [97 x 194 from (187, 242)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [104 x 209 from (73, 100)]
++Object's №: 1
+ Coordinate: [97 x 194 from (187, 242)]
+Frame №	350 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [88 x 175 from (192, 255)]
++Object's №: 1
+ Coordinate: [81 x 162 from (121, 277)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [88 x 175 from (192, 255)]
++Object's №: 1
+ Coordinate: [81 x 162 from (121, 277)]
+Frame №	351 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [89 x 177 from (192, 252)]
++Object's №: 1
+ Coordinate: [95 x 190 from (70, 109)]
++Object's №: 2
+ Coordinate: [83 x 166 from (487, 83)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [89 x 177 from (192, 252)]
++Object's №: 1
+ Coordinate: [95 x 190 from (70, 109)]
++Object's №: 2
+ Coordinate: [83 x 166 from (487, 83)]
+Frame №	352 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [97 x 194 from (72, 114)]
++Object's №: 1
+ Coordinate: [86 x 171 from (194, 259)]
++Object's №: 2
+ Coordinate: [82 x 164 from (122, 268)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [97 x 194 from (72, 114)]
++Object's №: 1
+ Coordinate: [86 x 171 from (194, 259)]
++Object's №: 2
+ Coordinate: [82 x 164 from (122, 268)]
+Frame №	353 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [90 x 179 from (191, 249)]
++Object's №: 1
+ Coordinate: [77 x 154 from (127, 271)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [90 x 179 from (191, 249)]
++Object's №: 1
+ Coordinate: [77 x 154 from (127, 271)]
+Frame №	354 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [88 x 176 from (193, 250)]
++Object's №: 1
+ Coordinate: [80 x 159 from (125, 265)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [88 x 176 from (193, 250)]
++Object's №: 1
+ Coordinate: [80 x 159 from (125, 265)]
+Frame №	355 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [88 x 175 from (192, 251)]
++Object's №: 1
+ Coordinate: [82 x 164 from (122, 262)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [88 x 175 from (192, 251)]
++Object's №: 1
+ Coordinate: [82 x 164 from (122, 262)]
+Frame №	356 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [92 x 183 from (190, 243)]
++Object's №: 1
+ Coordinate: [81 x 161 from (76, 136)]
++Object's №: 2
+ Coordinate: [84 x 168 from (125, 255)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [92 x 183 from (190, 243)]
++Object's №: 1
+ Coordinate: [81 x 161 from (76, 136)]
++Object's №: 2
+ Coordinate: [84 x 168 from (125, 255)]
+Frame №	357 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [87 x 174 from (69, 132)]
++Object's №: 1
+ Coordinate: [90 x 181 from (191, 239)]
++Object's №: 2
+ Coordinate: [86 x 171 from (126, 253)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [87 x 174 from (69, 132)]
++Object's №: 1
+ Coordinate: [90 x 181 from (191, 239)]
++Object's №: 2
+ Coordinate: [86 x 171 from (126, 253)]
+Frame №	358 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [86 x 172 from (129, 252)]
++Object's №: 1
+ Coordinate: [91 x 181 from (192, 236)]
++Object's №: 2
+ Coordinate: [84 x 167 from (70, 142)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [86 x 172 from (129, 252)]
++Object's №: 1
+ Coordinate: [91 x 181 from (192, 236)]
++Object's №: 2
+ Coordinate: [84 x 167 from (70, 142)]
+Frame №	359 ----------------------
+Object's on frame in detect:	5
++Object's №: 0
+ Coordinate: [95 x 189 from (63, 142)]
++Object's №: 1
+ Coordinate: [88 x 175 from (129, 246)]
++Object's №: 2
+ Coordinate: [81 x 161 from (495, 122)]
++Object's №: 3
+ Coordinate: [91 x 182 from (190, 234)]
++Object's №: 4
+ Coordinate: [72 x 145 from (72, 149)]
+				-----rejected------
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [95 x 189 from (63, 142)]
++Object's №: 1
+ Coordinate: [88 x 175 from (129, 246)]
++Object's №: 2
+ Coordinate: [81 x 161 from (495, 122)]
++Object's №: 3
+ Coordinate: [91 x 182 from (190, 234)]
+Frame №	360 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [87 x 173 from (493, 117)]
++Object's №: 1
+ Coordinate: [85 x 170 from (132, 243)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [87 x 173 from (493, 117)]
++Object's №: 1
+ Coordinate: [85 x 170 from (132, 243)]
+Frame №	361 ----------------------
+Object's on frame in detect:	4
++Object's №: 0
+ Coordinate: [93 x 187 from (58, 155)]
++Object's №: 1
+ Coordinate: [88 x 176 from (191, 222)]
++Object's №: 2
+ Coordinate: [86 x 171 from (132, 237)]
++Object's №: 3
+ Coordinate: [68 x 137 from (446, 147)]
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [93 x 187 from (58, 155)]
++Object's №: 1
+ Coordinate: [88 x 176 from (191, 222)]
++Object's №: 2
+ Coordinate: [86 x 171 from (132, 237)]
++Object's №: 3
+ Coordinate: [68 x 137 from (446, 147)]
+Frame №	362 ----------------------
+Object's on frame in detect:	4
++Object's №: 0
+ Coordinate: [99 x 199 from (496, 99)]
++Object's №: 1
+ Coordinate: [94 x 187 from (54, 157)]
++Object's №: 2
+ Coordinate: [82 x 164 from (194, 231)]
++Object's №: 3
+ Coordinate: [82 x 163 from (136, 235)]
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [99 x 199 from (496, 99)]
++Object's №: 1
+ Coordinate: [94 x 187 from (54, 157)]
++Object's №: 2
+ Coordinate: [82 x 164 from (194, 231)]
++Object's №: 3
+ Coordinate: [82 x 163 from (136, 235)]
+Frame №	363 ----------------------
+Object's on frame in detect:	4
++Object's №: 0
+ Coordinate: [91 x 182 from (500, 115)]
++Object's №: 1
+ Coordinate: [96 x 192 from (50, 155)]
++Object's №: 2
+ Coordinate: [82 x 164 from (194, 228)]
++Object's №: 3
+ Coordinate: [90 x 180 from (135, 229)]
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [91 x 182 from (500, 115)]
++Object's №: 1
+ Coordinate: [96 x 192 from (50, 155)]
++Object's №: 2
+ Coordinate: [82 x 164 from (194, 228)]
++Object's №: 3
+ Coordinate: [90 x 180 from (135, 229)]
+Frame №	364 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [93 x 186 from (51, 164)]
++Object's №: 1
+ Coordinate: [90 x 180 from (135, 225)]
++Object's №: 2
+ Coordinate: [79 x 158 from (502, 139)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [93 x 186 from (51, 164)]
++Object's №: 1
+ Coordinate: [90 x 180 from (135, 225)]
++Object's №: 2
+ Coordinate: [79 x 158 from (502, 139)]
+Frame №	365 ----------------------
+Object's on frame in detect:	4
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 177)]
++Object's №: 1
+ Coordinate: [90 x 181 from (503, 124)]
++Object's №: 2
+ Coordinate: [102 x 204 from (44, 158)]
++Object's №: 3
+ Coordinate: [86 x 172 from (136, 227)]
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 177)]
++Object's №: 1
+ Coordinate: [90 x 181 from (503, 124)]
++Object's №: 2
+ Coordinate: [102 x 204 from (44, 158)]
++Object's №: 3
+ Coordinate: [86 x 172 from (136, 227)]
+Frame №	366 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 177)]
++Object's №: 1
+ Coordinate: [94 x 187 from (505, 120)]
++Object's №: 2
+ Coordinate: [83 x 166 from (136, 223)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [109 x 219 from (177, 177)]
++Object's №: 1
+ Coordinate: [94 x 187 from (505, 120)]
++Object's №: 2
+ Coordinate: [83 x 166 from (136, 223)]
+Frame №	367 ----------------------
+Object's on frame in detect:	4
++Object's №: 0
+ Coordinate: [115 x 230 from (177, 172)]
++Object's №: 1
+ Coordinate: [99 x 199 from (502, 112)]
++Object's №: 2
+ Coordinate: [86 x 171 from (133, 219)]
++Object's №: 3
+ Coordinate: [82 x 164 from (514, -10)]
+Object's on frame in detect_filter:	4
++Object's №: 0
+ Coordinate: [115 x 230 from (177, 172)]
++Object's №: 1
+ Coordinate: [99 x 199 from (502, 112)]
++Object's №: 2
+ Coordinate: [86 x 171 from (133, 219)]
++Object's №: 3
+ Coordinate: [82 x 164 from (514, -10)]
+Frame №	368 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [97 x 194 from (502, 115)]
++Object's №: 1
+ Coordinate: [82 x 164 from (514, -10)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [97 x 194 from (502, 115)]
++Object's №: 1
+ Coordinate: [82 x 164 from (514, -10)]
+Frame №	369 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	370 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	371 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	372 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [121 x 241 from (181, 151)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [121 x 241 from (181, 151)]
+Frame №	373 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	374 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	375 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	376 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	377 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	378 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (534, 130)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (534, 130)]
+Frame №	379 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [71 x 142 from (149, 189)]
++Object's №: 1
+ Coordinate: [106 x 214 from (534, 133)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [71 x 142 from (149, 189)]
++Object's №: 1
+ Coordinate: [106 x 214 from (534, 133)]
+Frame №	380 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (537, 140)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [100 x 201 from (537, 140)]
+Frame №	381 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (538, 139)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [104 x 209 from (538, 139)]
+Frame №	382 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	383 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	384 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [112 x 224 from (-11, 217)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [112 x 224 from (-11, 217)]
+Frame №	385 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	386 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [120 x 238 from (-11, 227)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [120 x 238 from (-11, 227)]
+Frame №	387 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [110 x 221 from (-7, 237)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [110 x 221 from (-7, 237)]
+Frame №	388 ----------------------
+Object's on frame in detect:	1
++Object's №: 0
+ Coordinate: [106 x 213 from (-6, 245)]
+Object's on frame in detect_filter:	1
++Object's №: 0
+ Coordinate: [106 x 213 from (-6, 245)]
+Frame №	389 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [108 x 217 from (546, 164)]
++Object's №: 1
+ Coordinate: [107 x 215 from (-7, 249)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [108 x 217 from (546, 164)]
++Object's №: 1
+ Coordinate: [107 x 215 from (-7, 249)]
+Frame №	390 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [102 x 205 from (549, 175)]
++Object's №: 1
+ Coordinate: [105 x 210 from (-7, 255)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [102 x 205 from (549, 175)]
++Object's №: 1
+ Coordinate: [105 x 210 from (-7, 255)]
+Frame №	391 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [102 x 204 from (551, 177)]
++Object's №: 1
+ Coordinate: [105 x 210 from (-8, 257)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [102 x 204 from (551, 177)]
++Object's №: 1
+ Coordinate: [105 x 210 from (-8, 257)]
+Frame №	392 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [100 x 200 from (551, 185)]
++Object's №: 1
+ Coordinate: [102 x 204 from (-7, 262)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [100 x 200 from (551, 185)]
++Object's №: 1
+ Coordinate: [102 x 204 from (-7, 262)]
+Frame №	393 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [100 x 199 from (552, 189)]
++Object's №: 1
+ Coordinate: [99 x 198 from (-9, 269)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [100 x 199 from (552, 189)]
++Object's №: 1
+ Coordinate: [99 x 198 from (-9, 269)]
+Frame №	394 ----------------------
+Object's on frame in detect:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (556, 192)]
++Object's №: 1
+ Coordinate: [98 x 196 from (-8, 273)]
+Object's on frame in detect_filter:	2
++Object's №: 0
+ Coordinate: [98 x 197 from (556, 192)]
++Object's №: 1
+ Coordinate: [98 x 196 from (-8, 273)]
+Frame №	395 ----------------------
+Object's on frame in detect:	3
++Object's №: 0
+ Coordinate: [100 x 200 from (-9, 274)]
++Object's №: 1
+ Coordinate: [98 x 196 from (550, 192)]
++Object's №: 2
+ Coordinate: [76 x 152 from (71, 303)]
+Object's on frame in detect_filter:	3
++Object's №: 0
+ Coordinate: [100 x 200 from (-9, 274)]
++Object's №: 1
+ Coordinate: [98 x 196 from (55

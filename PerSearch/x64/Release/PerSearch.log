@@ -1,26 +1,26 @@
-﻿Построение начато 08.03.2017 16:03:06.
+﻿Построение начато 18.03.2017 19:26:28.
      1>Проект "C:\Users\Medivh\Documents\Visual Studio 2012\Projects\PerSearch\PerSearch\PerSearch.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
          D:\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\PerSearch.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /errorReport:prompt /clr:nostdlib PerSearch.cpp
          PerSearch.cpp
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1320): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1326): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1353): warning C4258: i: определение из цикла for игнорируется; используется определение из внешней области видимости
-                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1339): пропуск определения "i"
-                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1282): используется определение "i"
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1353): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1354): warning C4258: i: определение из цикла for игнорируется; используется определение из внешней области видимости
-                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1339): пропуск определения "i"
-                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1282): используется определение "i"
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1354): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1475): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1507): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1533): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1554): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1581): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1608): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1635): warning C4101: inspect: неиспользованная локальная переменная
-     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1662): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1386): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1392): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1419): warning C4258: i: определение из цикла for игнорируется; используется определение из внешней области видимости
+                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1405): пропуск определения "i"
+                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1346): используется определение "i"
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1419): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1420): warning C4258: i: определение из цикла for игнорируется; используется определение из внешней области видимости
+                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1405): пропуск определения "i"
+                 c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1346): используется определение "i"
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1420): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1563): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1595): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1621): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1642): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1669): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1696): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1723): warning C4101: inspect: неиспользованная локальная переменная
+     1>c:\users\medivh\documents\visual studio 2012\projects\persearch\persearch\Form1.h(1750): warning C4101: inspect: неиспользованная локальная переменная
      1>c:\ocv\opencv\build\include\opencv2\core\types_c.h(311): warning C4793: cvRound: функция скомпилирована как машинная:
          	Обнаружена встроенная функция, которая не поддерживается в управляемом коде
      1>c:\ocv\opencv\build\include\opencv2\core\types_c.h(311): warning C4793: cvRound: функция скомпилирована как машинная:
@@ -47,4 +47,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:02.27
+Затраченное время: 00:00:02.09
