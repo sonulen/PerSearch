@@ -29,6 +29,13 @@ std::vector <int> resultForRoiTwo; // Массив для хранения кол-ва прошедших людей
 std::vector <int> resultForRoiThree; // Массив для хранения кол-ва прошедших людей через ROI3 на каждом кадре
 std::vector <int> resultForRoiFour; // Массив для хранения кол-ва прошедших людей через ROI4 на каждом кадре
 std::vector <int> resultForRoiFive; // Массив для хранения кол-ва прошедших людей через ROI5 на каждом кадре
+std::vector <int> intensityDetectResultsOnFrames; // Массив для хранения интенсивности результатов детектора на всех кадрах
+std::vector <int> intensityMyPersonsResultsOnFrames; // результаты интенсивности класса FramePersons на всех кадрах
+std::vector <int> intensityResultForRoiOne; // Массив для хранения интенсивности прошедших людей через ROI1 на каждом кадре
+std::vector <int> intensityResultForRoiTwo; // Массив для хранения интенсивности прошедших людей через ROI2 на каждом кадре
+std::vector <int> intensityResultForRoiThree; // Массив для хранения интенсивности прошедших людей через ROI3 на каждом кадре
+std::vector <int> intensityResultForRoiFour; // Массив для хранения интенсивности прошедших людей через ROI4 на каждом кадре
+std::vector <int> intensityResultForRoiFive; // Массив для хранения интенсивности прошедших людей через ROI5 на каждом кадре
 // Переменна для хранения всего кол-ва прошедших подтвержденных людей
 int manConfirmedCounter;
 // Переменные для хранения кол-ва подтвержденных людей через ROI
@@ -158,6 +165,13 @@ namespace PerSearch {
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chart1;
 	private: System::Windows::Forms::TextBox^  textBox8;
 	private: System::Windows::Forms::Button^  button17;
+	private: System::Windows::Forms::Button^  button24;
+	private: System::Windows::Forms::Button^  button23;
+	private: System::Windows::Forms::Button^  button22;
+	private: System::Windows::Forms::Button^  button21;
+	private: System::Windows::Forms::Button^  button20;
+	private: System::Windows::Forms::Button^  button19;
+	private: System::Windows::Forms::Button^  button18;
 
 	private:
 		/// <summary>
@@ -178,6 +192,13 @@ namespace PerSearch {
 			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->button24 = (gcnew System::Windows::Forms::Button());
+			this->button23 = (gcnew System::Windows::Forms::Button());
+			this->button22 = (gcnew System::Windows::Forms::Button());
+			this->button21 = (gcnew System::Windows::Forms::Button());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
+			this->button18 = (gcnew System::Windows::Forms::Button());
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->label14 = (gcnew System::Windows::Forms::Label());
@@ -245,6 +266,13 @@ namespace PerSearch {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->button24);
+			this->tabPage1->Controls->Add(this->button23);
+			this->tabPage1->Controls->Add(this->button22);
+			this->tabPage1->Controls->Add(this->button21);
+			this->tabPage1->Controls->Add(this->button20);
+			this->tabPage1->Controls->Add(this->button19);
+			this->tabPage1->Controls->Add(this->button18);
 			this->tabPage1->Controls->Add(this->button17);
 			this->tabPage1->Controls->Add(this->textBox8);
 			this->tabPage1->Controls->Add(this->label14);
@@ -295,6 +323,83 @@ namespace PerSearch {
 			this->tabPage1->Text = L"HOG + SVM";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
+			// button24
+			// 
+			this->button24->Location = System::Drawing::Point(889, 394);
+			this->button24->Name = L"button24";
+			this->button24->Size = System::Drawing::Size(214, 23);
+			this->button24->TabIndex = 51;
+			this->button24->Text = L"Интенсивность пешеходов в ROI 5";
+			this->button24->UseVisualStyleBackColor = true;
+			this->button24->Visible = false;
+			this->button24->Click += gcnew System::EventHandler(this, &Form1::button24_Click);
+			// 
+			// button23
+			// 
+			this->button23->Location = System::Drawing::Point(889, 336);
+			this->button23->Name = L"button23";
+			this->button23->Size = System::Drawing::Size(214, 23);
+			this->button23->TabIndex = 50;
+			this->button23->Text = L"Интенсивность пешеходов в ROI 4";
+			this->button23->UseVisualStyleBackColor = true;
+			this->button23->Visible = false;
+			this->button23->Click += gcnew System::EventHandler(this, &Form1::button23_Click);
+			// 
+			// button22
+			// 
+			this->button22->Location = System::Drawing::Point(889, 278);
+			this->button22->Name = L"button22";
+			this->button22->Size = System::Drawing::Size(214, 23);
+			this->button22->TabIndex = 49;
+			this->button22->Text = L"Интенсивность пешеходов в ROI 3";
+			this->button22->UseVisualStyleBackColor = true;
+			this->button22->Visible = false;
+			this->button22->Click += gcnew System::EventHandler(this, &Form1::button22_Click);
+			// 
+			// button21
+			// 
+			this->button21->Location = System::Drawing::Point(889, 220);
+			this->button21->Name = L"button21";
+			this->button21->Size = System::Drawing::Size(214, 23);
+			this->button21->TabIndex = 48;
+			this->button21->Text = L"Интенсивность пешеходов в ROI 2";
+			this->button21->UseVisualStyleBackColor = true;
+			this->button21->Visible = false;
+			this->button21->Click += gcnew System::EventHandler(this, &Form1::button21_Click);
+			// 
+			// button20
+			// 
+			this->button20->Location = System::Drawing::Point(889, 160);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(214, 23);
+			this->button20->TabIndex = 47;
+			this->button20->Text = L"Интенсивность пешеходов в ROI 1";
+			this->button20->UseVisualStyleBackColor = true;
+			this->button20->Visible = false;
+			this->button20->Click += gcnew System::EventHandler(this, &Form1::button20_Click);
+			// 
+			// button19
+			// 
+			this->button19->Location = System::Drawing::Point(589, 231);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(278, 35);
+			this->button19->TabIndex = 46;
+			this->button19->Text = L"Показать интенсивность на результатах работы класса FramePersons";
+			this->button19->UseVisualStyleBackColor = true;
+			this->button19->Visible = false;
+			this->button19->Click += gcnew System::EventHandler(this, &Form1::button19_Click);
+			// 
+			// button18
+			// 
+			this->button18->Location = System::Drawing::Point(589, 162);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(278, 34);
+			this->button18->TabIndex = 45;
+			this->button18->Text = L"Показать интенсивность на результатах работы детектора";
+			this->button18->UseVisualStyleBackColor = true;
+			this->button18->Visible = false;
+			this->button18->Click += gcnew System::EventHandler(this, &Form1::button18_Click);
+			// 
 			// button17
 			// 
 			this->button17->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"button17.Image")));
@@ -337,7 +442,7 @@ namespace PerSearch {
 			this->textBox7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
 				| System::Windows::Forms::AnchorStyles::Left) 
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->textBox7->Location = System::Drawing::Point(592, 254);
+			this->textBox7->Location = System::Drawing::Point(592, 251);
 			this->textBox7->Multiline = true;
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
@@ -374,7 +479,7 @@ namespace PerSearch {
 			// 
 			// button16
 			// 
-			this->button16->Location = System::Drawing::Point(592, 438);
+			this->button16->Location = System::Drawing::Point(592, 435);
 			this->button16->Name = L"button16";
 			this->button16->Size = System::Drawing::Size(75, 23);
 			this->button16->TabIndex = 38;
@@ -385,9 +490,9 @@ namespace PerSearch {
 			// 
 			// button15
 			// 
-			this->button15->Location = System::Drawing::Point(589, 212);
+			this->button15->Location = System::Drawing::Point(589, 272);
 			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(236, 38);
+			this->button15->Size = System::Drawing::Size(278, 38);
 			this->button15->TabIndex = 37;
 			this->button15->Text = L"Показать файл с найденными объектами и траекториями";
 			this->button15->UseVisualStyleBackColor = true;
@@ -396,18 +501,18 @@ namespace PerSearch {
 			// 
 			// button14
 			// 
-			this->button14->Location = System::Drawing::Point(889, 276);
+			this->button14->Location = System::Drawing::Point(889, 365);
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(214, 23);
 			this->button14->TabIndex = 36;
-			this->button14->Text = L"Показать результаты захода в ROI 4";
+			this->button14->Text = L"Показать результаты захода в ROI 5";
 			this->button14->UseVisualStyleBackColor = true;
 			this->button14->Visible = false;
 			this->button14->Click += gcnew System::EventHandler(this, &Form1::button14_Click);
 			// 
 			// button13
 			// 
-			this->button13->Location = System::Drawing::Point(889, 240);
+			this->button13->Location = System::Drawing::Point(889, 307);
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(214, 23);
 			this->button13->TabIndex = 35;
@@ -418,7 +523,7 @@ namespace PerSearch {
 			// 
 			// button12
 			// 
-			this->button12->Location = System::Drawing::Point(889, 203);
+			this->button12->Location = System::Drawing::Point(889, 249);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(214, 23);
 			this->button12->TabIndex = 34;
@@ -429,7 +534,7 @@ namespace PerSearch {
 			// 
 			// button11
 			// 
-			this->button11->Location = System::Drawing::Point(889, 166);
+			this->button11->Location = System::Drawing::Point(889, 191);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(214, 23);
 			this->button11->TabIndex = 33;
@@ -451,7 +556,7 @@ namespace PerSearch {
 			// 
 			// button9
 			// 
-			this->button9->Location = System::Drawing::Point(589, 173);
+			this->button9->Location = System::Drawing::Point(589, 202);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(278, 23);
 			this->button9->TabIndex = 31;
@@ -464,7 +569,7 @@ namespace PerSearch {
 			// 
 			this->button8->Location = System::Drawing::Point(589, 133);
 			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(228, 23);
+			this->button8->Size = System::Drawing::Size(278, 23);
 			this->button8->TabIndex = 30;
 			this->button8->Text = L"Показать результат работы детектора";
 			this->button8->UseVisualStyleBackColor = true;
@@ -893,7 +998,7 @@ namespace PerSearch {
 				if ( timeInterval < 0 ) throw -1;
 
 				// Элементы ввода интервала времени - скрыть
-				label4->Text = "Интервал времени = " + timeInterval;
+				label4->Text = "Интервал времени = " + timeInterval + " секунд";
 				button2->Visible=false;
 				textBox1->Visible=false;
 
@@ -1488,7 +1593,6 @@ namespace PerSearch {
 					 cv::imshow("Background", fgMaskMOG);
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
-					 
 					 //if ( counter > 300 ) cv::waitKey();
 					 if (cv::waitKey(1)>=0){
 					 	break;
@@ -1498,10 +1602,139 @@ namespace PerSearch {
 				 cvDestroyAllWindows();
 				 fout.close();
 				 checkout.close();
-
 				 // Запишем полученные значения counterов
 				 manConfirmedCounter = checkPersons.getManConfirmedCounter();
 				 masManConfirmedCounterForRoi = checkPersons.getRoiManConfirmedCounter();
+				 //
+				 // Вычислим интенсивности пешеходов для всех результатов.
+				 // Узнаем кол-во кадров в секунду у выбранного видеофайла
+				 CvCapture *capture = cvCreateFileCapture(loadFileName.c_str()); // cсоздаем capture для потока видео
+				 int framesPerSecond; //кол-во кадров в видео
+				 framesPerSecond = cvGetCaptureProperty(capture, CV_CAP_PROP_FPS); //получем кол-во кадров в загруженном видео
+				 delete(capture);
+				 // Интенсивность детектора
+				 std::ofstream foutForIntensity(filesDir+"\\Intensity_Detectors_Results.txt", std::ios_base::app);
+				 for (int i = 0; i < detectResultsOnFrames.size(); i ++ ) {
+					 foutForIntensity << "Интервал c " << i << " по ";
+					 int countForintensity = 0;
+					 int j = 0;
+					 for ( j = 0; j < (timeInterval*framesPerSecond) && i < detectResultsOnFrames.size(); j++,i++) {
+						 countForintensity += detectResultsOnFrames[i]; 
+					 }
+					 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+					 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+					 intensityDetectResultsOnFrames.push_back( countForintensity );
+					 foutForIntensity << countForintensity << "\n";
+					 countForintensity = 0;
+				 }
+				 foutForIntensity.close();
+				 // Интенсивность класса FramePersons;
+				 foutForIntensity.open(filesDir+"\\Intensity_Persons_Search_Results.txt", std::ios_base::app);
+				 for (int i = 0; i < myPersonsResultsOnFrames.size(); i ++ ) {
+					 foutForIntensity << "Интервал c " << i << " по ";
+					 int countForintensity = 0;
+					 int j = 0;
+					 for ( j = 0; j < (timeInterval*framesPerSecond) && i < myPersonsResultsOnFrames.size(); j++,i++) {
+						 countForintensity += myPersonsResultsOnFrames[i]; 
+					 }
+					 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+					 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+					 intensityMyPersonsResultsOnFrames.push_back( countForintensity );
+					 foutForIntensity << countForintensity << "\n";
+					 countForintensity = 0;
+				 }
+				 foutForIntensity.close();
+				 // Интенсивность для ROI1;
+				 if ( myCurrentRoi->getAmountRoi() > 0 ) {
+					 std::ofstream foutForIntensity(filesDir+"\\Intensity_ROI1_Results.txt", std::ios_base::app);
+					 for (int i = 0; i < resultForRoiOne.size(); i ++ ) {
+						 foutForIntensity << "Интервал c " << i << " по ";
+						 int countForintensity = 0;
+						 int j = 0;
+						 for ( j = 0; j < (timeInterval*framesPerSecond) && i < resultForRoiOne.size(); j++,i++) {
+							 countForintensity += resultForRoiOne[i]; 
+						 }
+						 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+						 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+						 intensityResultForRoiOne.push_back( countForintensity );
+						 foutForIntensity << countForintensity << "\n";
+						 countForintensity = 0;
+					 }
+					 foutForIntensity.close();
+				 }
+				 // Интенсивность для ROI2;
+				 if ( myCurrentRoi->getAmountRoi() > 1 ) {
+					 std::ofstream foutForIntensity(filesDir+"\\Intensity_ROI2_Results.txt", std::ios_base::app);
+					 for (int i = 0; i < resultForRoiTwo.size(); i ++ ) {
+						 foutForIntensity << "Интервал c " << i << " по ";
+						 int countForintensity = 0;
+						 int j = 0;
+						 for ( j = 0; j < (timeInterval*framesPerSecond) && i < resultForRoiTwo.size(); j++,i++) {
+							 countForintensity += resultForRoiTwo[i]; 
+						 }
+						 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+						 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+						 intensityResultForRoiTwo.push_back( countForintensity );
+						 foutForIntensity << countForintensity << "\n";
+						 countForintensity = 0;
+					 }
+					 foutForIntensity.close();
+				 }
+				 // Интенсивность для ROI3;
+				 if ( myCurrentRoi->getAmountRoi() > 2 ) {
+					 std::ofstream foutForIntensity(filesDir+"\\Intensity_ROI3_Results.txt", std::ios_base::app);
+					 for (int i = 0; i < resultForRoiThree.size(); i ++ ) {
+						 foutForIntensity << "Интервал c " << i << " по ";
+						 int countForintensity = 0;
+						 int j = 0;
+						 for ( j = 0; j < (timeInterval*framesPerSecond) && i < resultForRoiThree.size(); j++,i++) {
+							 countForintensity += resultForRoiThree[i]; 
+						 }
+						 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+						 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+						 intensityResultForRoiThree.push_back( countForintensity );
+						 foutForIntensity << countForintensity << "\n";
+						 countForintensity = 0;
+					 }
+					 foutForIntensity.close();
+				 }
+				 // Интенсивность для ROI4;
+				 if ( myCurrentRoi->getAmountRoi() > 3 ) {
+					 std::ofstream foutForIntensity(filesDir+"\\Intensity_ROI4_Results.txt", std::ios_base::app);
+					 for (int i = 0; i < resultForRoiFour.size(); i ++ ) {
+						 foutForIntensity << "Интервал c " << i << " по ";
+						 int countForintensity = 0;
+						 int j = 0;
+						 for ( j = 0; j < (timeInterval*framesPerSecond) && i < resultForRoiFour.size(); j++,i++) {
+							 countForintensity += resultForRoiFour[i]; 
+						 }
+						 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+						 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+						 intensityResultForRoiFour.push_back( countForintensity );
+						 foutForIntensity << countForintensity << "\n";
+						 countForintensity = 0;
+					 }
+					 foutForIntensity.close();
+				 }
+				 // Интенсивность для ROI5;
+				 if ( myCurrentRoi->getAmountRoi() > 4 ) {
+					 std::ofstream foutForIntensity(filesDir+"\\Intensity_ROI5_Results.txt", std::ios_base::app);
+					 for (int i = 0; i < resultForRoiFive.size(); i ++ ) {
+						 foutForIntensity << "Интервал c " << i << " по ";
+						 int countForintensity = 0;
+						 int j = 0;
+						 for ( j = 0; j < (timeInterval*framesPerSecond) && i < resultForRoiFive.size(); j++,i++) {
+							 countForintensity += resultForRoiFive[i]; 
+						 }
+						 foutForIntensity << i << " кадр\nИнтенсивность пешеходов = ";
+						 countForintensity = ceil(Convert::ToDouble(countForintensity)/j);
+						 intensityResultForRoiFive.push_back( countForintensity );
+						 foutForIntensity << countForintensity << "\n";
+						 countForintensity = 0;
+					 }
+					 foutForIntensity.close();
+				 }
+				 //
 				 resultInterfaceVisibleTrue();
 		 }
 	// Показать интерфейс результатов
@@ -1510,20 +1743,27 @@ namespace PerSearch {
 				 button8->Visible = true;
 				 button9->Visible = true;
 				 button15->Visible = true;
+				 button18->Visible = true;
+				 button19->Visible = true;
 				 if ( myCurrentRoi->getAmountRoi() > 0 ) {
 					 button10->Visible = true;
+					 button20->Visible = true;
 				 }
 				 if ( myCurrentRoi->getAmountRoi() > 1 ) {
 					 button11->Visible = true;
+					 button21->Visible = true;
 				 }
 				 if ( myCurrentRoi->getAmountRoi() > 2 ) {
 					 button12->Visible = true;
+					 button22->Visible = true;
 				 }
 				 if ( myCurrentRoi->getAmountRoi() > 3 ) {
 					 button13->Visible = true;
+					 button23->Visible = true;
 				 }
 				 if ( myCurrentRoi->getAmountRoi() > 4 ) {
 					 button14->Visible = true;
+					 button24->Visible = true;
 				 }
 
 				 chart1->Visible = false;
@@ -1537,12 +1777,19 @@ namespace PerSearch {
 				 label13->Visible = false;
 				 button8->Visible = false;
 				 button9->Visible = false;
-				 button15->Visible = false;
 				 button10->Visible = false;
 				 button11->Visible = false;
 				 button12->Visible = false;
 				 button13->Visible = false;
 				 button14->Visible = false;
+				 button15->Visible = false;
+				 button18->Visible = false;
+				 button19->Visible = false;
+				 button20->Visible = false;
+				 button21->Visible = false;
+				 button22->Visible = false;
+				 button23->Visible = false;
+				 button24->Visible = false;
 				 button16->Visible = true;
 			 }			 
 	// Отобразить результаты работы детектора на всех кадрах
@@ -1761,9 +2008,199 @@ namespace PerSearch {
 					 this->chart1->Series["Количество людей прошедших через ROI#5"]->Points->AddXY(i,resultForRoiFive[i]);
  				 }
 			 }
-private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
+	// Перезагрузить приложение
+	private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Application::Restart();
 		 }
+	// Отобразить интенсивность пешеходов на результатах работы Detector
+	private: System::Void button18_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов на результатах работы детектора";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_Detectors_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityDetectResultsOnFrames.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityDetectResultsOnFrames[i]);
+ 				 }
+		 }
+	// Отобразить интенсивность пешеходов на результатах работы FramePersons
+	private: System::Void button19_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов на результатах работы класса FramePersons";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_Persons_Search_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityMyPersonsResultsOnFrames.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityMyPersonsResultsOnFrames[i]);
+ 				 }
+		 }
+	// Интенсивность пешеходов для ROI 1
+	private: System::Void button20_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов прошедших через ROI 1";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_ROI1_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityResultForRoiOne.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiOne[i]);
+ 				 }
+		 }
+	// Интенсивность пешеходов для ROI 2
+	private: System::Void button21_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов прошедших через ROI 2";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_ROI2_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityResultForRoiTwo.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiTwo[i]);
+ 				 }
+			 }
+	// Интенсивность пешеходов для ROI 3
+	private: System::Void button22_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов прошедших через ROI 3";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_ROI3_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityResultForRoiThree.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiThree[i]);
+ 				 }
+			 }
+	// Интенсивность пешеходов для ROI 4
+	private: System::Void button23_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов прошедших через ROI 4";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_ROI4_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityResultForRoiFour.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiFour[i]);
+ 				 }
+			 }
+	// Интенсивность пешеходов для ROI 5
+	private: System::Void button24_Click(System::Object^  sender, System::EventArgs^  e) {
+				 resultInterfaceVisibleFalse();
+				 chart1->Visible = true;
+				 textBox7->Visible = true;
+				 label14->Visible = true;
+				 label14->Text = "Интенсивность пешеходов прошедших через ROI 5";
+				 try 
+				 {
+					auto MyReader = gcnew IO::StreamReader(convertStdStringToSystemString(filesDir + "\\Intensity_ROI5_Results.txt"), System::Text::Encoding::GetEncoding(1251)); 
+					textBox7->Text= MyReader->ReadToEnd();
+					MyReader->Close();
+				 } 
+				 catch (int inspect ) 
+				 { 
+					MessageBox::Show("Ошибка при считывании файла");
+				 }
+				 this->chart1->Series->Clear();
+				 this->chart1->Series->Add("Интенсивность потока пешеходов");
+				 chart1->Series["Интенсивность потока пешеходов"]->ChartType=System::Windows::Forms::DataVisualization::Charting::SeriesChartType::FastLine;
+				 chart1->ChartAreas["ChartArea1"]->AxisX->MajorGrid->Enabled = false;
+				 chart1->ChartAreas["ChartArea1"]->AxisY->MajorGrid->Enabled = false;
+				 for (int i=0; i<intensityResultForRoiFive.size(); i++)
+				 {
+					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiFive[i]);
+ 				 }
+			 }
 };// Окончание
 }
 
