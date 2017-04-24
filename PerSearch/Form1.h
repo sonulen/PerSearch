@@ -11,6 +11,7 @@
 // Global Obj
 std::string filesDir; // Директория с путем к папке Текущая_дир//Files// где лежат все файлы
 std::string loadFileName; // Путь к выбранному файлу
+std::string savedParams; // путь к сохраненным параметрам
 int timeInterval; // Временной интервал
 bool resolutionForResize; // Переменная для хранения решения изменения размера изображения
 bool flagForOnClickPictureBox = false;
@@ -1028,6 +1029,7 @@ namespace PerSearch {
 				}
 				
 				cv::imwrite( filesDir+"SavedParams\\firstframe.jpg", imag);
+				savedParams = filesDir+"SavedParams\\";
 				pictureBox1->Image=Image::FromFile( convertStdStringToSystemString( filesDir+"SavedParams\\firstframe.jpg" ));
 				pictureBox1->Visible = true;
 				video.~VideoCapture();
@@ -1358,6 +1360,7 @@ namespace PerSearch {
 				 cv::namedWindow("Background", CV_WINDOW_AUTOSIZE);
 				 cv::namedWindow("Updated scene", CV_WINDOW_AUTOSIZE);
 				 cv::namedWindow("MyCheckWindow", CV_WINDOW_AUTOSIZE);
+				 cv::namedWindow("Intensity", CV_WINDOW_AUTOSIZE);
 				 // TrackBar
 				 // Точность детектора
 				 cvCreateTrackbar("Accuracy", "Updated scene", &accuracy, 6, myTrackbarAccuracy);
@@ -1414,6 +1417,22 @@ namespace PerSearch {
 				 checkout << "Height frame: " << resizeHeight << "\n";
 				 // Инициализируем свой класс для отслеживания и трекирования
 				 FramePersons checkPersons (myCurrentRoi);
+				 //
+				 // Интенсивность 
+				 cv::Mat Intensityimag, IntensityMap;
+				 Intensityimag = cv::imread(savedParams+"firstframe.jpg");
+				 if ( resolutionForResize ) cv::resize(Intensityimag,Intensityimag,cv::Size(resizeWidth,resizeHeight),0,0,1);
+				 Intensityimag.copyTo(IntensityMap);
+				 int scale = 40;
+				 int IntensityMask [40][40];
+				 for ( int i = 0; i < scale; i ++ ) {
+					 for ( int j = 0; j < scale; j++ ) {
+						 IntensityMask[i][j] = 0;
+					 }
+				 }
+				 int scaleX = resizeWidth/scale;
+				 int scaleY = resizeHeight/scale;
+				 int maxIntensity = 0;
 				 //
 				 while (true) { // пока не нажата клавиша или пока можно считать кадр записываем
 					 video >> imag; // считываем кадр	
@@ -1506,6 +1525,11 @@ namespace PerSearch {
 						 rec.y += cvRound(rec.height*0.07);
 						 rec.height = cvRound(rec.height*0.8);
 						 cv::rectangle(myCheckImage, rec.tl(), rec.br(), cv::Scalar(255,0,0), 3);
+						 // Интенсивность на карте движения
+						 cv::circle(Intensityimag,cv::Point((rec.x+rec.width/2),(rec.y+rec.height/2)),3,CV_RGB(255,99,71),-1,8,00);
+						 IntensityMask[(rec.x+rec.width/2)/scaleX][(rec.y+rec.height/2)/scaleY] ++;
+						 if ( maxIntensity <= IntensityMask[(rec.x+rec.width/2)/scaleX][(rec.y+rec.height/2)/scaleY] ) maxIntensity = IntensityMask[(rec.x+rec.width/2)/scaleX][(rec.y+rec.height/2)/scaleY];
+						 //
 						 // Попадает ли объект в какую либо ROI
 						 for (int i = 0; i < myCurrentRoi->getAmountRoi(); i++) {
 							myCurrentRoi->setRoi(i);
@@ -1522,7 +1546,7 @@ namespace PerSearch {
 						 }
 						 // Траектория
 						 for (int j = 0; j < checkPersons.trackCount(i); j++ ) {
-							 cv::circle(myCheckImage,checkPersons.getTrackPointofMan(i,j),5,CV_RGB(0,0,205),-1,8,00);
+							 cv::circle(myCheckImage,checkPersons.getTrackPointofMan(i,j),3,CV_RGB(0,0,205),-1,8,00);
 						 }
 					 }
 					 // Для презентации
@@ -1593,6 +1617,7 @@ namespace PerSearch {
 					 cv::imshow("Background", fgMaskMOG);
 					 cv::imshow("Updated scene", foregroundImg);
 					 cv::imshow("MyCheckWindow", myCheckImage);
+					 cv::imshow("Intensity", Intensityimag);
 					 //if ( counter > 300 ) cv::waitKey();
 					 if (cv::waitKey(1)>=0){
 					 	break;
@@ -1602,6 +1627,24 @@ namespace PerSearch {
 				 cvDestroyAllWindows();
 				 fout.close();
 				 checkout.close();
+				 // IntensityMap	
+				 cv::namedWindow("IntensityTrack's", CV_WINDOW_AUTOSIZE);
+			     cv::imshow("IntensityTrack's", Intensityimag);
+				 int startX = 0, startY = 0;
+				 for ( int i = 0; i < scale; i++ ) {
+					 for ( int j = 0; j < scale; j++ ) {
+						 cv::Rect r( startX, startY, scaleX, scaleY );
+						 // Вот здесьт важно J и I поменяны местами, сделал руководствуясь что идем сначало по ширине а потом по высоте и снова по ширине. ездим по строчкам а не столбам
+						 int red = IntensityMask[j][i] * 255 / maxIntensity;
+						 IntensityMap(r) += CV_RGB(red,0,0);
+						 startX += scaleX;
+					 }
+					 startX = 0; 
+					 startY += scaleY;
+				 }
+				 cv::namedWindow("IntensityMap", CV_WINDOW_AUTOSIZE);
+			     cv::imshow("IntensityMap", IntensityMap);
+				 //
 				 // Запишем полученные значения counterов
 				 manConfirmedCounter = checkPersons.getManConfirmedCounter();
 				 masManConfirmedCounterForRoi = checkPersons.getRoiManConfirmedCounter();

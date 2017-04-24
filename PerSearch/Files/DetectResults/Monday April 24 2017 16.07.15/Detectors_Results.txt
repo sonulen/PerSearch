@@ -1,0 +1,45 @@
+Analyzed file:	F:\Learning\Магистр\Video for disser\mega3.mp4
+Width frame: 640
+Height frame: 480
+Frame №	0 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	1 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	2 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	3 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	4 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	5 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	6 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	7 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	8 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	9 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	10 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	11 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	12 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0
+Frame №	13 ----------------------
+Object's on frame in detect:	0
+Object's on frame in detect_filter:	0

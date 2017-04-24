@@ -1,0 +1,1917 @@
+Analyzed file:	F:\Learning\Ьрушёђ№\Video for disser\mega3.mp4
+Width frame: 640
+Height frame: 480
+Frame Й	0 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	1 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	2 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	3 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	4 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	5 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	6 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	7 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	8 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	9 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	10 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	11 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	12 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	13 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	14 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	15 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	16 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	17 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	18 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	19 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	20 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	21 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	22 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	23 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	24 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	25 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	26 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	27 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	28 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	29 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	30 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	31 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	32 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	33 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	34 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	35 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	36 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	37 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	38 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	39 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	40 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	41 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	42 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	43 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	44 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	45 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	46 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	47 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	48 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	49 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	50 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	51 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	52 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	53 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	54 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	55 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	56 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	57 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	58 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	59 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	60 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	61 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	62 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	63 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	64 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	65 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	66 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	67 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	68 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	69 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	70 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	71 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	72 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	73 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	74 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	75 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	76 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	77 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	78 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	79 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	80 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	81 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	82 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	83 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	84 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	85 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	86 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	87 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	88 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	89 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	90 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	91 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	92 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	93 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	94 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	95 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	96 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	97 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	98 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	99 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	100 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	101 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	102 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	103 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	104 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	105 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	106 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	107 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	108 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	109 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	110 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	111 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	112 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	113 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	114 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	115 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	116 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	117 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	118 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	119 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	120 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	121 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	122 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	123 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	124 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	125 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	126 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	127 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	128 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	129 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	130 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	131 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	132 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	133 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	134 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	135 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	136 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	137 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	138 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	139 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	140 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	141 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	142 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	143 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	144 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	145 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	146 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	147 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	148 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	149 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	150 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	151 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	152 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	153 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	154 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	155 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	156 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	157 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	158 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	159 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	160 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	161 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	162 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	163 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	164 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	165 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	166 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	167 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	168 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	169 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	170 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	171 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	172 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	173 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	174 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	175 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	176 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	177 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	178 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	179 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	180 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	181 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	182 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	183 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	184 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	185 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	186 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	187 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	188 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	189 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	190 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	191 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	192 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	193 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	194 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	195 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	196 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	197 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	198 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	199 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	200 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	201 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	202 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	203 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	204 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	205 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	206 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	207 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	208 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	209 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	210 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	211 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	212 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	213 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	214 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	215 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	216 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	217 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	218 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	219 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	220 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	221 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	222 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	223 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	224 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	225 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	226 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	227 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	228 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	229 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	230 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	231 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	232 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	233 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	234 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	235 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	236 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	237 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	238 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	239 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	240 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	241 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	242 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	243 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	244 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	245 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	246 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	247 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	248 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	249 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	250 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	251 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	252 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	253 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	254 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	255 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	256 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	257 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	258 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	259 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	260 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	261 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	262 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	263 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	264 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	265 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	266 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	267 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	268 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	269 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	270 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	271 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [98 x 196 from (555, 175)]
+Frame Й	272 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [98 x 196 from (550, 177)]
+Frame Й	273 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [98 x 196 from (551, 168)]
+Frame Й	274 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [110 x 221 from (540, 142)]
+Frame Й	275 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [130 x 259 from (526, 113)]
+Frame Й	276 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [130 x 259 from (524, 109)]
+Frame Й	277 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [130 x 259 from (522, 105)]
+Frame Й	278 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [130 x 259 from (520, 101)]
+Frame Й	279 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [105 x 209 from (539, 135)]
+Frame Й	280 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [105 x 209 from (539, 135)]
+Frame Й	281 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [105 x 209 from (539, 135)]
+Frame Й	282 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (538, 133)]
+Frame Й	283 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (536, 130)]
+Frame Й	284 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (534, 127)]
+Frame Й	285 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (532, 124)]
+Frame Й	286 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (530, 121)]
+Frame Й	287 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (527, 126)]
+Frame Й	288 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (525, 123)]
+Frame Й	289 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (523, 120)]
+Frame Й	290 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (521, 117)]
+Frame Й	291 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (519, 114)]
+Frame Й	292 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (517, 111)]
+Frame Й	293 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (515, 108)]
+Frame Й	294 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (513, 105)]
+Frame Й	295 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (511, 102)]
+Frame Й	296 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (509, 99)]
+Frame Й	297 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (507, 96)]
+Frame Й	298 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (505, 93)]
+Frame Й	299 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (503, 90)]
+Frame Й	300 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	301 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	302 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	303 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	304 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	305 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	306 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	307 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	308 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	309 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	310 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	311 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	312 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	313 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	314 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	315 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	316 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	317 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	318 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	319 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	320 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	321 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	322 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	323 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	324 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	325 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	326 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	327 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	328 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	329 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	330 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	331 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	332 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	333 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	334 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	335 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	336 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	337 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	338 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	339 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	340 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	341 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	342 ----------------------
+Object's on frame in myPersons:	2
+Frame Й	343 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [92 x 185 from (111, 296)]
+Frame Й	344 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [92 x 184 from (108, 297)]
+Frame Й	345 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [92 x 184 from (108, 296)]
+Frame Й	346 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [92 x 184 from (108, 295)]
+Frame Й	347 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [104 x 208 from (109, 265)]
+Frame Й	348 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [106 x 212 from (107, 262)]
+Frame Й	349 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [100 x 200 from (107, 256)]
+Frame Й	350 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (109, 248)]
+Frame Й	351 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [94 x 187 from (116, 260)]
+Frame Й	352 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [89 x 178 from (118, 264)]
+Frame Й	353 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 267)]
+Frame Й	354 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 263)]
+Frame Й	355 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 259)]
+Frame Й	356 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 255)]
+Frame Й	357 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 251)]
+Frame Й	358 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 247)]
+Frame Й	359 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 243)]
+Frame Й	360 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 239)]
+Frame Й	361 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 235)]
+Frame Й	362 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 231)]
+Frame Й	363 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 227)]
+Frame Й	364 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 223)]
+Frame Й	365 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (120, 219)]
+Frame Й	366 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	367 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	368 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	369 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	370 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	371 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	372 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	373 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	374 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	375 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	376 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	377 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	378 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	379 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	380 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	381 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	382 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	383 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	384 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	385 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	386 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	387 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	388 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	389 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [105 x 209 from (-7, 251)]
+Frame Й	390 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [107 x 213 from (-7, 251)]
+Frame Й	391 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [104 x 207 from (-6, 261)]
+Frame Й	392 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [104 x 207 from (-6, 264)]
+Frame Й	393 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (-6, 270)]
+Frame Й	394 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (-7, 272)]
+Frame Й	395 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (-6, 270)]
+Frame Й	396 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-30, 268)]
+Frame Й	397 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-31, 270)]
+Frame Й	398 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-32, 272)]
+Frame Й	399 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-33, 274)]
+Frame Й	400 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-34, 276)]
+Frame Й	401 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-35, 278)]
+Frame Й	402 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-36, 280)]
+Frame Й	403 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-37, 282)]
+Frame Й	404 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-38, 284)]
+Frame Й	405 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-39, 286)]
+Frame Й	406 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-40, 288)]
+Frame Й	407 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (-41, 290)]
+Frame Й	408 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [118 x 236 from (-42, 292)]
+Frame Й	409 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	410 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	411 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	412 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	413 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	414 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [108 x 216 from (61, 213)]
+Frame Й	415 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [110 x 220 from (59, 212)]
+Frame Й	416 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [110 x 220 from (64, 206)]
+Frame Й	417 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [123 x 245 from (60, 190)]
+Frame Й	418 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [131 x 261 from (58, 175)]
+Frame Й	419 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [137 x 274 from (54, 167)]
+Frame Й	420 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [127 x 253 from (63, 181)]
+Frame Й	421 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [138 x 276 from (59, 161)]
+Frame Й	422 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [134 x 268 from (58, 158)]
+Frame Й	423 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [127 x 254 from (63, 162)]
+Frame Й	424 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [128 x 255 from (62, 161)]
+Frame Й	425 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [128 x 255 from (63, 158)]
+Frame Й	426 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [128 x 255 from (64, 155)]
+Frame Й	427 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [128 x 255 from (65, 152)]
+Frame Й	428 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [117 x 234 from (72, 167)]
+Frame Й	429 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [109 x 218 from (73, 168)]
+Frame Й	430 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [117 x 233 from (68, 161)]
+Frame Й	431 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [116 x 231 from (69, 153)]
+Frame Й	432 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [129 x 257 from (63, 138)]
+Frame Й	433 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [123 x 246 from (66, 144)]
++Object's Й: 1
+ Coordinate: [113 x 226 from (221, 254)]
+Frame Й	434 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [113 x 226 from (70, 154)]
++Object's Й: 1
+ Coordinate: [117 x 235 from (216, 247)]
+Frame Й	435 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [119 x 238 from (66, 148)]
++Object's Й: 1
+ Coordinate: [117 x 235 from (217, 240)]
+Frame Й	436 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [119 x 238 from (66, 148)]
++Object's Й: 1
+ Coordinate: [117 x 234 from (218, 240)]
+Frame Й	437 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [124 x 249 from (67, 133)]
++Object's Й: 1
+ Coordinate: [125 x 249 from (218, 234)]
+Frame Й	438 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [120 x 239 from (70, 136)]
++Object's Й: 1
+ Coordinate: [129 x 257 from (217, 225)]
+Frame Й	439 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [117 x 233 from (68, 139)]
++Object's Й: 1
+ Coordinate: [129 x 257 from (218, 221)]
+Frame Й	440 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [111 x 223 from (69, 138)]
++Object's Й: 1
+ Coordinate: [129 x 257 from (219, 217)]
+Frame Й	441 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [115 x 230 from (68, 132)]
++Object's Й: 1
+ Coordinate: [129 x 257 from (220, 213)]
+Frame Й	442 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [115 x 230 from (68, 132)]
++Object's Й: 1
+ Coordinate: [129 x 257 from (221, 209)]
+Frame Й	443 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [119 x 238 from (66, 125)]
+Frame Й	444 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [119 x 238 from (66, 125)]
+Frame Й	445 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [117 x 234 from (72, 123)]
++Object's Й: 1
+ Coordinate: [112 x 224 from (242, 200)]
+Frame Й	446 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [117 x 234 from (72, 120)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (242, 194)]
+Frame Й	447 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 197 from (84, 132)]
++Object's Й: 1
+ Coordinate: [107 x 214 from (248, 198)]
+Frame Й	448 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 197 from (84, 132)]
++Object's Й: 1
+ Coordinate: [114 x 227 from (246, 185)]
+Frame Й	449 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 198 from (85, 130)]
++Object's Й: 1
+ Coordinate: [114 x 229 from (247, 183)]
+Frame Й	450 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 198 from (85, 130)]
++Object's Й: 1
+ Coordinate: [118 x 236 from (245, 179)]
+Frame Й	451 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 225 from (76, 112)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (246, 176)]
+Frame Й	452 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [114 x 228 from (77, 108)]
++Object's Й: 1
+ Coordinate: [110 x 220 from (254, 172)]
+Frame Й	453 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [110 x 220 from (82, 115)]
++Object's Й: 1
+ Coordinate: [100 x 200 from (258, 177)]
+Frame Й	454 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [110 x 220 from (82, 112)]
++Object's Й: 1
+ Coordinate: [94 x 189 from (262, 173)]
+Frame Й	455 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [106 x 212 from (86, 112)]
++Object's Й: 1
+ Coordinate: [93 x 185 from (263, 167)]
+Frame Й	456 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [106 x 212 from (86, 109)]
++Object's Й: 1
+ Coordinate: [117 x 234 from (255, 145)]
+Frame Й	457 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 198 from (88, 111)]
++Object's Й: 1
+ Coordinate: [104 x 209 from (261, 154)]
+Frame Й	458 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 198 from (88, 108)]
++Object's Й: 1
+ Coordinate: [104 x 209 from (262, 150)]
+Frame Й	459 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [92 x 184 from (91, 108)]
++Object's Й: 1
+ Coordinate: [109 x 219 from (259, 144)]
+Frame Й	460 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [89 x 178 from (94, 110)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (258, 136)]
+Frame Й	461 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [89 x 178 from (94, 107)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (259, 132)]
+Frame Й	462 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [89 x 178 from (94, 104)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (260, 128)]
+Frame Й	463 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 194 from (94, 102)]
++Object's Й: 1
+ Coordinate: [115 x 230 from (261, 124)]
+Frame Й	464 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 199 from (93, 99)]
++Object's Й: 1
+ Coordinate: [119 x 238 from (259, 118)]
+Frame Й	465 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [99 x 199 from (93, 96)]
++Object's Й: 1
+ Coordinate: [119 x 238 from (260, 114)]
+Frame Й	466 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [96 x 192 from (96, 96)]
++Object's Й: 1
+ Coordinate: [100 x 200 from (273, 122)]
+Frame Й	467 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [96 x 192 from (96, 96)]
++Object's Й: 1
+ Coordinate: [99 x 198 from (275, 118)]
+Frame Й	468 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (95, 95)]
++Object's Й: 1
+ Coordinate: [96 x 191 from (278, 116)]
+Frame Й	469 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 94)]
++Object's Й: 1
+ Coordinate: [100 x 201 from (277, 108)]
+Frame Й	470 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 91)]
++Object's Й: 1
+ Coordinate: [99 x 198 from (278, 109)]
+Frame Й	471 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 88)]
++Object's Й: 1
+ Coordinate: [100 x 200 from (274, 104)]
+Frame Й	472 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 85)]
++Object's Й: 1
+ Coordinate: [102 x 204 from (276, 98)]
+Frame Й	473 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 82)]
++Object's Й: 1
+ Coordinate: [102 x 204 from (276, 98)]
+Frame Й	474 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 79)]
++Object's Й: 1
+ Coordinate: [104 x 208 from (275, 92)]
+Frame Й	475 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [94 x 188 from (94, 76)]
++Object's Й: 1
+ Coordinate: [111 x 222 from (273, 86)]
+Frame Й	476 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [82 x 164 from (102, 86)]
++Object's Й: 1
+ Coordinate: [92 x 184 from (284, 93)]
+Frame Й	477 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [82 x 164 from (102, 83)]
++Object's Й: 1
+ Coordinate: [108 x 216 from (274, 73)]
+Frame Й	478 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [82 x 164 from (102, 80)]
++Object's Й: 1
+ Coordinate: [106 x 212 from (280, 72)]
+Frame Й	479 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [82 x 164 from (102, 77)]
++Object's Й: 1
+ Coordinate: [106 x 212 from (280, 68)]
+Frame Й	480 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [101 x 201 from (97, 59)]
++Object's Й: 1
+ Coordinate: [105 x 211 from (281, 64)]
+Frame Й	481 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 63)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 64)]
+Frame Й	482 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 60)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 60)]
+Frame Й	483 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 57)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 56)]
+Frame Й	484 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 54)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 52)]
+Frame Й	485 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 51)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 48)]
+Frame Й	486 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 48)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 44)]
+Frame Й	487 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 45)]
++Object's Й: 1
+ Coordinate: [102 x 206 from (282, 40)]
+Frame Й	488 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 42)]
++Object's Й: 1
+ Coordinate: [106 x 212 from (284, 46)]
+Frame Й	489 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 39)]
++Object's Й: 1
+ Coordinate: [96 x 192 from (292, 47)]
+Frame Й	490 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 36)]
++Object's Й: 1
+ Coordinate: [96 x 192 from (292, 43)]
+Frame Й	491 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 33)]
++Object's Й: 1
+ Coordinate: [95 x 190 from (294, 40)]
+Frame Й	492 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 30)]
++Object's Й: 1
+ Coordinate: [95 x 190 from (294, 38)]
+Frame Й	493 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [97 x 193 from (96, 27)]
++Object's Й: 1
+ Coordinate: [89 x 178 from (298, 40)]
+Frame Й	494 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [93 x 186 from (298, 34)]
+Frame Й	495 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (292, 27)]
+Frame Й	496 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [102 x 204 from (295, 25)]
+Frame Й	497 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [103 x 206 from (294, 22)]
+Frame Й	498 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 203 from (292, 20)]
+Frame Й	499 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [106 x 214 from (294, 14)]
+Frame Й	500 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [104 x 208 from (296, 13)]
+Frame Й	501 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [100 x 201 from (298, 12)]
+Frame Й	502 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [70 x 139 from (316, 26)]
+Frame Й	503 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [70 x 139 from (316, 22)]
+Frame Й	504 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [70 x 139 from (316, 18)]
+Frame Й	505 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [70 x 139 from (316, 14)]
+Frame Й	506 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [70 x 139 from (316, 10)]
+Frame Й	507 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -6)]
+Frame Й	508 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -10)]
+Frame Й	509 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -14)]
+Frame Й	510 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -18)]
+Frame Й	511 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -22)]
+Frame Й	512 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -26)]
+Frame Й	513 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -30)]
+Frame Й	514 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [101 x 202 from (303, -34)]
+Frame Й	515 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [92 x 185 from (314, -23)]
+Frame Й	516 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [86 x 173 from (316, -20)]
+Frame Й	517 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [88 x 176 from (315, -22)]
+Frame Й	518 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -21)]
+Frame Й	519 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -21)]
+Frame Й	520 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -25)]
+Frame Й	521 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -29)]
+Frame Й	522 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -33)]
+Frame Й	523 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -37)]
+Frame Й	524 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -41)]
+Frame Й	525 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -45)]
+Frame Й	526 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -49)]
+Frame Й	527 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -53)]
+Frame Й	528 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -57)]
+Frame Й	529 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -61)]
+Frame Й	530 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -65)]
+Frame Й	531 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [85 x 169 from (317, -69)]
+Frame Й	532 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	533 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	534 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	535 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	536 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	537 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	538 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	539 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	540 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	541 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	542 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	543 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	544 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	545 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	546 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	547 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	548 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	549 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	550 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	551 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	552 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	553 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	554 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	555 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	556 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	557 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	558 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	559 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [107 x 213 from (549, 41)]
+Frame Й	560 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [107 x 213 from (549, 41)]
+Frame Й	561 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [107 x 213 from (549, 41)]
+Frame Й	562 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [110 x 220 from (540, 28)]
+Frame Й	563 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [105 x 210 from (543, 32)]
+Frame Й	564 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [112 x 223 from (540, 27)]
+Frame Й	565 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [112 x 224 from (539, 26)]
+Frame Й	566 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [113 x 226 from (540, 22)]
+Frame Й	567 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [113 x 226 from (540, 22)]
+Frame Й	568 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [113 x 226 from (540, 22)]
+Frame Й	569 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [121 x 241 from (536, 15)]
+Frame Й	570 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [121 x 241 from (535, 14)]
+Frame Й	571 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [121 x 241 from (534, 13)]
+Frame Й	572 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [108 x 215 from (540, 18)]
+Frame Й	573 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [118 x 236 from (531, 8)]
+Frame Й	574 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [117 x 235 from (530, 6)]
+Frame Й	575 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [117 x 235 from (530, 6)]
+Frame Й	576 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [120 x 239 from (526, 3)]
+Frame Й	577 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [113 x 225 from (527, 8)]
+Frame Й	578 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [115 x 230 from (528, 9)]
+Frame Й	579 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [125 x 249 from (516, 5)]
+Frame Й	580 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [133 x 266 from (515, -8)]
+Frame Й	581 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [133 x 266 from (515, -8)]
+Frame Й	582 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [133 x 266 from (515, -8)]
+Frame Й	583 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [133 x 266 from (515, -8)]
+Frame Й	584 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [112 x 224 from (522, 15)]
+Frame Й	585 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [112 x 224 from (521, 14)]
+Frame Й	586 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [112 x 224 from (520, 13)]
+Frame Й	587 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (519, 12)]
+Frame Й	588 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (518, 11)]
+Frame Й	589 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (517, 10)]
++Object's Й: 1
+ Coordinate: [92 x 185 from (534, -6)]
+Frame Й	590 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (516, 9)]
++Object's Й: 1
+ Coordinate: [92 x 185 from (534, -7)]
+Frame Й	591 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (515, 8)]
++Object's Й: 1
+ Coordinate: [92 x 185 from (534, -8)]
+Frame Й	592 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (514, 7)]
++Object's Й: 1
+ Coordinate: [92 x 185 from (534, -9)]
+Frame Й	593 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (513, 6)]
++Object's Й: 1
+ Coordinate: [93 x 187 from (532, -12)]
+Frame Й	594 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (512, 5)]
++Object's Й: 1
+ Coordinate: [93 x 187 from (532, -12)]
+Frame Й	595 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (511, 4)]
++Object's Й: 1
+ Coordinate: [93 x 187 from (531, -13)]
+Frame Й	596 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [112 x 224 from (510, 3)]
++Object's Й: 1
+ Coordinate: [98 x 196 from (524, -19)]
+Frame Й	597 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (525, -13)]
+Frame Й	598 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (524, -14)]
+Frame Й	599 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [98 x 196 from (525, -25)]
+Frame Й	600 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (532, -24)]
+Frame Й	601 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (531, -26)]
+Frame Й	602 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (530, -28)]
+Frame Й	603 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [95 x 189 from (529, -30)]
+Frame Й	604 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [86 x 172 from (530, -21)]
+Frame Й	605 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [86 x 172 from (529, -23)]
+Frame Й	606 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [86 x 172 from (528, -25)]
+Frame Й	607 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [82 x 164 from (530, -20)]
+Frame Й	608 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [82 x 164 from (529, -22)]
+Frame Й	609 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [82 x 164 from (528, -24)]
+Frame Й	610 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [82 x 164 from (527, -26)]
+Frame Й	611 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [82 x 164 from (526, -28)]
+Frame Й	612 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [74 x 148 from (537, -9)]
+Frame Й	613 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (538, -4)]
+Frame Й	614 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (537, -5)]
+Frame Й	615 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (536, -6)]
+Frame Й	616 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (535, -7)]
+Frame Й	617 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (534, -8)]
+Frame Й	618 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (533, -9)]
+Frame Й	619 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (532, -10)]
+Frame Й	620 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (531, -11)]
+Frame Й	621 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (530, -12)]
+Frame Й	622 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [71 x 141 from (529, -13)]
+Frame Й	623 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (528, -14)]
+Frame Й	624 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [71 x 141 from (527, -15)]
+Frame Й	625 ----------------------
+Object's on frame in myPersons:	2
++Object's Й: 0
+ Coordinate: [71 x 141 from (526, -16)]
+Frame Й	626 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	627 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	628 ----------------------
+Object's on frame in myPersons:	0
+Frame Й	629 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	630 ----------------------
+Object's on frame in myPersons:	1
+Frame Й	631 ----------------------
+Object's on frame in myPersons:	1
++Object's Й: 0
+ Coordinate: [109 x 217 from (540, 
