@@ -173,6 +173,7 @@ namespace PerSearch {
 	private: System::Windows::Forms::Button^  button20;
 	private: System::Windows::Forms::Button^  button19;
 	private: System::Windows::Forms::Button^  button18;
+	private: System::Windows::Forms::Button^  button25;
 
 	private:
 		/// <summary>
@@ -248,11 +249,13 @@ namespace PerSearch {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->button25 = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
+			this->tabPage2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -917,6 +920,7 @@ namespace PerSearch {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->button25);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
@@ -924,6 +928,16 @@ namespace PerSearch {
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// button25
+			// 
+			this->button25->Location = System::Drawing::Point(132, 87);
+			this->button25->Name = L"button25";
+			this->button25->Size = System::Drawing::Size(75, 23);
+			this->button25->TabIndex = 0;
+			this->button25->Text = L"button25";
+			this->button25->UseVisualStyleBackColor = true;
+			this->button25->Click += gcnew System::EventHandler(this, &Form1::button25_Click);
 			// 
 			// Form1
 			// 
@@ -943,6 +957,7 @@ namespace PerSearch {
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
+			this->tabPage2->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
@@ -1636,7 +1651,9 @@ namespace PerSearch {
 						 cv::Rect r( startX, startY, scaleX, scaleY );
 						 // Вот здесьт важно J и I поменяны местами, сделал руководствуясь что идем сначало по ширине а потом по высоте и снова по ширине. ездим по строчкам а не столбам
 						 int red = IntensityMask[j][i] * 255 / maxIntensity;
-						 IntensityMap(r) += CV_RGB(red,0,0);
+						 if ( red >= 200 ) IntensityMap(r) += CV_RGB(red,0,0);
+						 if ( red <= 200 && red > 100 ) IntensityMap(r) += CV_RGB(0,255,255);
+						 if ( red <= 100 && red > 50 ) IntensityMap(r) += CV_RGB(154,205,50);
 						 startX += scaleX;
 					 }
 					 startX = 0; 
@@ -2244,6 +2261,43 @@ namespace PerSearch {
 					 this->chart1->Series["Интенсивность потока пешеходов"]->Points->AddXY(i,intensityResultForRoiFive[i]);
  				 }
 			 }
+
+// для диссера
+private: System::Void button25_Click(System::Object^  sender, System::EventArgs^  e) {
+			   cv::HOGDescriptor HGDES; // хог дескриптор
+				 cv::Mat imag; // переменная для хранения кадра
+				 HGDES.setSVMDetector(cv::HOGDescriptor::getDefaultPeopleDetector()); // сам хог дескриптор с свм классификатором
+				 // Окна
+				 cv::namedWindow("HOG_TEST", CV_WINDOW_AUTOSIZE); // окно для вывода кадра с найденными объектами
+				 imag = cv::imread("F:\\Learning\\Магистр\\Магистерская\\Test_HOG\\20090701-IMG_5439.jpg");
+				// cv::resize(imag,imag,cv::Size(640,480),0,0,1);
+
+					cv::vector<cv::Rect> found, found_filtered;
+					HGDES.detectMultiScale(imag, found, 0, cv::Size(8,8), cv::Size(32,32), 1.05, 2);
+					size_t i, j;
+					for (i=0; i<found.size(); i++) 
+					{
+						cv::Rect r = found[i];
+						for (j=0; j<found.size(); j++) 
+							if (j!=i && (r & found[j]) == r)
+								break;
+						if (j== found.size())
+							found_filtered.push_back(r);
+					}
+ 
+					for (i=0; i<found_filtered.size(); i++) 
+					{
+						cv::Rect r = found_filtered[i];
+						r.x += cvRound(r.width*0.1);
+						r.width = cvRound(r.width*0.8);
+						r.y += cvRound(r.height*0.07);
+						r.height = cvRound(r.height*0.8);
+						rectangle(imag, r.tl(), r.br(), cv::Scalar(0,255,0), 3);        
+					}
+
+					cv::imshow("HOG_TEST", imag);
+
+		 }
 };// Окончание
 }
 
